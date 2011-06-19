@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CTT Demo
+Exec=ctt
+Icon=ctt.xpm
+Info=CTT Demo version
+Comment=Transistor tester - demo version
+Comment[hu]=Tranzisztor teszter - demo változat
+Type=Application
+Categories=Application;Electronics;
+Terminal=false
+StartupNotify=true

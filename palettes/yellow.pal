@@ -1,0 +1,10 @@
+# +----------------------------------------------------------------------------+
+# | CTT v0.1pre1-demo * Transistor tester                                      |
+# | Copyright (C) 2010 Pozsar Zsolt <info@pozsarzs.hu>                         |
+# | yellow.pal                                                                 |
+# | Display colour setting                                                     |
+# +----------------------------------------------------------------------------+
+FG=$FFF474
+D1=$CCC35D
+D2=$999246
+BG=$574A03

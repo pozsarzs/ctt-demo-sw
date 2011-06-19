@@ -1,0 +1,869 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: CTT v0.1pre1-demo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Pozsár Zsolt <pozsarzs@t-email.hu>\n"
+"Language-Team: Pozsár Zsolt <info@pozsarzs.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "pin-out:"
+msgstr "lábkiosztás:"
+
+#: commonproc.message01
+msgid "Missing default configuration file!"
+msgstr "Hiányzó beállítás fájl!"
+
+#: commonproc.message02
+msgid "Cannot write the user's configuration file!"
+msgstr "A felhasználó beállítása nem menthető!"
+
+#: commonproc.message03
+msgid "Please check browser application setting!"
+msgstr "Ellenőrizze a megadott böngésző alkalmazást!"
+
+#: commonproc.message04
+msgid "Please check mailer application setting!"
+msgstr "Ellenőrizze a megadott levelező alkalmazást!"
+
+#: commonproc.message05
+msgid "Missing palette file!"
+msgstr "Hiányzó színbeállítások!"
+
+#: frmabout.message01
+msgid "Demo mode,"
+msgstr "Demó mód,"
+
+#: frmabout.message02
+msgid "registration required!"
+msgstr "regisztráció szükséges!"
+
+#: frmmain.message01
+msgid "Demo"
+msgstr "Demó"
+
+#: frmmain.message02
+msgid "Full"
+msgstr "Teljes"
+
+#: frmmain.message03
+msgid "Off-line"
+msgstr "Off-line"
+
+#: frmmain.message04
+msgid "On-line"
+msgstr "On-line"
+
+#: frmmain.message05
+msgid "New version is available. Please visit CTT's homepage!"
+msgstr "Új változat elérhető. Kérem, látogassa meg a CTT honlapját!"
+
+#: frmmain.message06
+msgid "Open original profile"
+msgstr "Eredeti profil megnyitás"
+
+#: frmmain.message07
+msgid "Save profile as"
+msgstr "Profil mentés másként"
+
+#: frmmain.message08
+msgid "Profile files (*.pro)|*.pro|"
+msgstr "Profil állományok (*.pro)|*.pro|"
+
+#: frmmain.message09
+msgid "File is exist. Replace?"
+msgstr "A fájl létezik, felülírjam?"
+
+#: frmmain.message10
+msgid "new profile"
+msgstr "új profil"
+
+#: frmmain.message11
+msgid "Save recent profile?"
+msgstr "Mentsem az jelenlegi profilt?"
+
+#: frmmain.message12
+msgid "Num"
+msgstr "Szám"
+
+#: frmmain.message13
+msgid "h21E"
+msgstr "h21E"
+
+#: frmmain.message14
+msgid "Box"
+msgstr "Doboz"
+
+#: frmmain.message15
+msgid "Compartment of the sorting box"
+msgstr "Válogató doboz rekesze"
+
+#: frmmain.message16
+msgid "emitter"
+msgstr "emitter"
+
+#: frmmain.message17
+msgid "base"
+msgstr "bázis"
+
+#: frmmain.message18
+msgid "collector"
+msgstr "kollektor"
+
+#: frmmain.message19
+msgid "shield/metal package"
+msgstr "árnyékolás, fémház"
+
+#: frmmain.message20
+msgid "none"
+msgstr "nincs"
+
+#: frmmain.message21
+msgid "Missing files! Please reinstall CTT!"
+msgstr "Hiányzó fájlok! Telepítse újra az alkalmazást."
+
+#: frmmain.message22
+msgid "There is not newer version!"
+msgstr "Nincs újabb változat."
+
+#: frmmain.message23
+msgid "(description)"
+msgstr "(leírás)"
+
+#: frmmain.message24
+msgid "Open own profile"
+msgstr "Saját profil megnyitása"
+
+#: frmmain.message25
+msgid "Profile load error, creating a new one"
+msgstr "Profil megnyitási hiba, készítek egy üreset."
+
+#: frmmain.message26
+msgid "(unknown)"
+msgstr "(unknown)"
+
+#: frmmain.message27
+msgid "Invalid or missing hardware key!"
+msgstr "Érvénytelen vagy hiányzó hardver-kulcs!"
+
+#: frmmain.message28
+msgid "Save result in BMP format"
+msgstr "Eredmény mentés BMP formátumban"
+
+#: frmmain.message29
+msgid "Save result in TXT format"
+msgstr "Eredmény mentés TXT formátumban"
+
+#: frmmain.message30
+msgid "Bitmap files (*.bmp)|*.bmp|"
+msgstr "Bitkép (*.bmp)|*.bmp|"
+
+#: frmmain.message31
+msgid "Text files (*.txt)|*.txt|"
+msgstr "Szöveges állomány (*.txt)|*.txt|"
+
+#: frmmain.message32
+msgid "Cannot save this file!"
+msgstr "Sajnálom, nem tudtam elmenteni ezt a fájlt."
+
+#: frmmain.message33
+msgid "Connect a transistor to tester and press OK!"
+msgstr "Csatlakoztasson egy tranzisztort a teszterhez és nyomja meg az OK-t!"
+
+#: frmmain.message34
+msgid "Put it to this compartment: #"
+msgstr "Tegye a következő rekeszbe: "
+
+#: frmmain.message35
+msgid "Set aside..."
+msgstr "Tegye félre..."
+
+#: frmmain.message36
+msgid "X: "
+msgstr "X:"
+
+#: frmmain.message37
+msgid "Y: "
+msgstr "Y:"
+
+#: frmmain.message38
+msgid "resolution: "
+msgstr "felbontás: "
+
+#: frmmain.message39
+msgid "marker: "
+msgstr "marker: "
+
+#: frmmain.message40
+msgid "Bipolar transistor input characteristic"
+msgstr "Bipoláris tranzisztor bemeneti karakterisztikája"
+
+#: frmmain.message41
+msgid "Bipolar transistor output characteristic"
+msgstr "Bipoláris tranzisztor kimeneti karakterisztikája"
+
+#: frmmain.message42
+msgid "This application is a pre release demo version of the CTT."
+msgstr "Ez az alkalmazás a CTT előzetes demó kiadása."
+
+#: frmmain.message43
+msgid "You can view and test the application, but you can not measure."
+msgstr "Megtekintheti és kipróbálhatja, de mérésre nem alkalmas."
+
+#: frmmain.message44
+msgid "The CTT project is under development. Follow it on this website: http://www.pozsarzs.hu"
+msgstr "A CTT projekt még fejlesztés alatt van. Az állapotát figyelemmel kísérheti a honlapján: http://www.pozsarzs.hu"
+
+#: frmpref.message01
+msgid "Select browser application"
+msgstr "Válasszon böngészőt"
+
+#: frmpref.message02
+msgid "Select mailer application"
+msgstr "Válasszon levelezőt"
+
+#: frmpref.message03
+msgid "executables|*.exe|all files|*.*"
+msgstr "alkalmazások|*.exe|minden fájl|*.*"
+
+#: frmpref.message04
+msgid "all files|*.*"
+msgstr "minden fájl|*.*"
+
+#: frmpref.message05
+msgid "white"
+msgstr "fehér"
+
+#: frmpref.message06
+msgid "yellow"
+msgstr "sárga"
+
+#: frmpref.message07
+msgid "red"
+msgstr "vörös"
+
+#: frmpref.message08
+msgid "green"
+msgstr "zöld"
+
+#: frmpref.message09
+msgid "blue"
+msgstr "kék"
+
+#: frmpref.message10
+msgid "black"
+msgstr "fekete"
+
+#: frmserial.message01
+msgid "Wrong serial number!"
+msgstr "Rossz sorozatszám!"
+
+#: TFORM1.BITBTN6.CAPTION
+msgid "&Clear"
+msgstr "&Törlés"
+
+#: TFORM1.BITBTN7.CAPTION
+msgid "&Clear"
+msgstr "&Törlés"
+
+#: TFORM1.BUTTON1.CAPTION
+msgid "&Start"
+msgstr "&Start"
+
+#: TFORM1.BUTTON10.CAPTION
+msgid "&Start"
+msgstr "&Start"
+
+#: TFORM1.BUTTON11.CAPTION
+msgid "&Clear"
+msgstr "&Törlés"
+
+#: TFORM1.BUTTON2.CAPTION
+msgid "Start"
+msgstr "Start"
+
+#: TFORM1.BUTTON3.CAPTION
+msgid "Start"
+msgstr "Start"
+
+#: TFORM1.BUTTON4.CAPTION
+msgid "Start"
+msgstr "Start"
+
+#: TFORM1.BUTTON5.CAPTION
+msgid "Start"
+msgstr "Start"
+
+#: TFORM1.BUTTON6.CAPTION
+msgid "Start"
+msgstr "Start"
+
+#: TFORM1.BUTTON7.CAPTION
+msgid "&Start"
+msgstr "&Start"
+
+#: TFORM1.BUTTON8.CAPTION
+msgid "&Details..."
+msgstr "&Részletek..."
+
+#: TFORM1.BUTTON9.CAPTION
+msgid "&Details..."
+msgstr "&Részletek..."
+
+#: TFORM1.CAPTION
+msgid "CTT - new profile"
+msgstr "CTT - új profil"
+
+#: TFORM1.COMBOBOX1.TEXT
+msgid "NPN"
+msgstr "NPN"
+
+#: TFORM1.EDIT1.TEXT
+msgid "(description)"
+msgstr "(leírás)"
+
+#: TFORM1.EDIT2.TEXT
+msgid "new profile"
+msgstr "új profil"
+
+#: TFORM1.GROUPBOX1.CAPTION
+msgid "BUce"
+msgstr "BUce"
+
+#: TFORM1.GROUPBOX2.CAPTION
+msgid "BUcb"
+msgstr "BUcb"
+
+#: TFORM1.GROUPBOX3.CAPTION
+msgid "Ieb0"
+msgstr "Ieb0"
+
+#: TFORM1.GROUPBOX4.CAPTION
+msgid "Icb0"
+msgstr "Icb0"
+
+#: TFORM1.GROUPBOX5.CAPTION
+msgid "Ice0"
+msgstr "Ice0"
+
+#: TFORM1.LABEL1.CAPTION
+msgid "Type:"
+msgstr "Típus:"
+
+#: TFORM1.LABEL10.CAPTION
+msgid "Pin #5:"
+msgstr "5. láb:"
+
+#: TFORM1.LABEL11.CAPTION
+msgid "Pin #3:"
+msgstr "3. láb:"
+
+#: TFORM1.LABEL12.CAPTION
+msgid "Pin #4:"
+msgstr "4. láb:"
+
+#: TFORM1.LABEL14.CAPTION
+msgid "Package &"
+msgstr "Tokozás és"
+
+#: TFORM1.LABEL15.CAPTION
+msgid "Pin #6:"
+msgstr "6. láb:"
+
+#: TFORM1.LABEL17.CAPTION
+msgid "Pin #7:"
+msgstr "7. láb:"
+
+#: TFORM1.LABEL18.CAPTION
+msgid "Warning!"
+msgstr "Figyelem!"
+
+#: TFORM1.LABEL19.CAPTION
+msgid "This measurement can destroy the transistor!"
+msgstr "Ez a mérés tönkreteheti a tranzisztort!"
+
+#: TFORM1.LABEL2.CAPTION
+msgid "Pin #1:"
+msgstr "1. láb:"
+
+#: TFORM1.LABEL20.CAPTION
+msgid "V"
+msgstr "V"
+
+#: TFORM1.LABEL21.CAPTION
+msgid "V"
+msgstr "V"
+
+#: TFORM1.LABEL22.CAPTION
+msgid "uA"
+msgstr "uA"
+
+#: TFORM1.LABEL23.CAPTION
+msgid "uA"
+msgstr "uA"
+
+#: TFORM1.LABEL24.CAPTION
+msgid "uA"
+msgstr "uA"
+
+#: TFORM1.LABEL25.CAPTION
+msgid "Breakdown voltage"
+msgstr "Letörési feszültség"
+
+#: TFORM1.LABEL26.CAPTION
+msgid "Reverse current"
+msgstr "Szivárgóáram"
+
+#: TFORM1.LABEL27.CAPTION
+msgid "%"
+msgstr "%"
+
+#: TFORM1.LABEL28.CAPTION
+msgid "Tolerance:"
+msgstr "Tűrés:"
+
+#: TFORM1.LABEL29.CAPTION
+msgid "Measure voltage: 100V"
+msgstr "Mérőfeszültség: 100V"
+
+#: TFORM1.LABEL3.CAPTION
+msgid "Ucem [V]:"
+msgstr "Ucem [V]:"
+
+#: TFORM1.LABEL30.CAPTION
+msgid "Measure voltage: 6V"
+msgstr "Mérőfeszültség: 6V"
+
+#: TFORM1.LABEL4.CAPTION
+msgid "Ucbm [V]:"
+msgstr "Ucbm [V]:"
+
+#: TFORM1.LABEL5.CAPTION
+msgid "Icm [A]:"
+msgstr "Icm [A]:"
+
+#: TFORM1.LABEL6.CAPTION
+msgid "Ibm [mA]:"
+msgstr "Ibm [mA]:"
+
+#: TFORM1.LABEL7.CAPTION
+msgid "Pd [W]:"
+msgstr "Pd [W]:"
+
+#: TFORM1.LABEL8.CAPTION
+msgid "Polarity"
+msgstr "Polaritás"
+
+#: TFORM1.LABEL9.CAPTION
+msgid "Pin #2:"
+msgstr "2. láb:"
+
+#: TFORM1.MENUITEM1.CAPTION
+msgid "&File"
+msgstr "&Fájl"
+
+#: TFORM1.MENUITEM10.CAPTION
+msgid "&Software help"
+msgstr "&Szoftver segítség"
+
+#: TFORM1.MENUITEM11.CAPTION
+msgid "H&ardware help"
+msgstr "H&ardver segítség"
+
+#: TFORM1.MENUITEM12.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM13.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM14.CAPTION
+msgid "See &homepage"
+msgstr "&Honlap"
+
+#: TFORM1.MENUITEM15.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM16.CAPTION
+msgid "&Save profile"
+msgstr "Profil menté&s"
+
+#: TFORM1.MENUITEM17.CAPTION
+msgid "&Open profile"
+msgstr "Pr&ofil megnyitás"
+
+#: TFORM1.MENUITEM18.CAPTION
+msgid "&New profile"
+msgstr "Ú&j profil"
+
+#: TFORM1.MENUITEM19.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM2.CAPTION
+msgid "&Operation"
+msgstr "Műkö&dés"
+
+#: TFORM1.MENUITEM20.CAPTION
+msgid "Search &update"
+msgstr "F&rissítés keresés"
+
+#: TFORM1.MENUITEM21.CAPTION
+msgid "&Original profiles"
+msgstr "Eredeti pr&ofilok"
+
+#: TFORM1.MENUITEM22.CAPTION
+msgid "&Parameters"
+msgstr "&Paraméterek"
+
+#: TFORM1.MENUITEM23.CAPTION
+msgid "&Base characteristic"
+msgstr "&Bázis karakterisztika"
+
+#: TFORM1.MENUITEM24.CAPTION
+msgid "&Pair select"
+msgstr "&Párbaválogatás"
+
+#: TFORM1.MENUITEM25.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM26.CAPTION
+msgid "&Preferences..."
+msgstr "B&eállítások"
+
+#: TFORM1.MENUITEM27.CAPTION
+msgid "&My profiles"
+msgstr "Saját pro&filok"
+
+#: TFORM1.MENUITEM28.CAPTION
+msgid "Save profile &as..."
+msgstr "Profil mentés m&ásként"
+
+#: TFORM1.MENUITEM29.CAPTION
+msgid "Save &result"
+msgstr "E&redmény mentés"
+
+#: TFORM1.MENUITEM3.CAPTION
+msgid "&Help"
+msgstr "&Segítség"
+
+#: TFORM1.MENUITEM30.CAPTION
+msgid "as &picture (BMP)"
+msgstr "ké&pként (BMP)"
+
+#: TFORM1.MENUITEM31.CAPTION
+msgid "as data (TXT)"
+msgstr "adatként (TXT)"
+
+#: TFORM1.MENUITEM37.CAPTION
+msgid "&View"
+msgstr "&Nézet"
+
+#: TFORM1.MENUITEM38.CAPTION
+msgid "Toggle &grid"
+msgstr "&Rács be/ki"
+
+#: TFORM1.MENUITEM39.CAPTION
+msgid "Toggle &header"
+msgstr "Fejlé&c be/ki"
+
+#: TFORM1.MENUITEM4.CAPTION
+msgid "&Quit"
+msgstr "&Kilépés"
+
+#: TFORM1.MENUITEM40.CAPTION
+msgid "&Collector characteristic"
+msgstr "&Kollektor karakterisztika"
+
+#: TFORM1.MENUITEM42.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM43.CAPTION
+msgid "Re&fresh displays"
+msgstr "Kijelzők &frissítése"
+
+#: TFORM1.MENUITEM44.CAPTION
+msgid "&Clear all display"
+msgstr "Összes kijelző tör&lése"
+
+#: TFORM1.MENUITEM5.CAPTION
+msgid "Set &serial number..."
+msgstr "Sorozatszám beállítás..."
+
+#: TFORM1.MENUITEM6.CAPTION
+msgid "On-line &registration"
+msgstr "On-line &regisztráció"
+
+#: TFORM1.MENUITEM7.CAPTION
+msgid "On-line &bugreport"
+msgstr "On-line hi&bajelentés"
+
+#: TFORM1.MENUITEM8.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM1.MENUITEM9.CAPTION
+msgid "&About..."
+msgstr "&Névjegy"
+
+#: TFORM1.PANEL1.CAPTION
+msgid "0 "
+msgstr "0 "
+
+#: TFORM1.PANEL2.CAPTION
+msgid "0 "
+msgstr "0 "
+
+#: TFORM1.PANEL3.CAPTION
+msgid "0 "
+msgstr "0 "
+
+#: TFORM1.PANEL4.CAPTION
+msgid "0 "
+msgstr "0 "
+
+#: TFORM1.PANEL5.CAPTION
+msgid "0 "
+msgstr "0 "
+
+#: TFORM1.TABSHEET1.CAPTION
+msgid "Parameters"
+msgstr "Paraméterek"
+
+#: TFORM1.TABSHEET2.CAPTION
+msgid "Base characteristic"
+msgstr "Bázis karakterisztika"
+
+#: TFORM1.TABSHEET3.CAPTION
+msgid "Pair select"
+msgstr "Párbaválogatás"
+
+#: TFORM1.TABSHEET4.CAPTION
+msgid "Collector characteristic"
+msgstr "Kollektor karakterisztika"
+
+#: TFORM1.TOOLBAR1.CAPTION
+msgid "ToolBar1"
+msgstr "ToolBar1"
+
+#: TFORM1.TOOLBUTTON1.CAPTION
+msgid "&New profile"
+msgstr "Ú&j profil"
+
+#: TFORM1.TOOLBUTTON1.HINT
+msgid "Create new profile"
+msgstr "Új profil létrehozása"
+
+#: TFORM1.TOOLBUTTON10.CAPTION
+msgid "Toggle &grid"
+msgstr "&Rács be/ki"
+
+#: TFORM1.TOOLBUTTON10.HINT
+msgid "Toggle grid"
+msgstr "Rács be/ki"
+
+#: TFORM1.TOOLBUTTON11.CAPTION
+msgid "&Software help"
+msgstr "&Szoftver segítség"
+
+#: TFORM1.TOOLBUTTON11.HINT
+msgid "Software help"
+msgstr "Szoftver segítség"
+
+#: TFORM1.TOOLBUTTON12.CAPTION
+msgid "ToolButton12"
+msgstr "ToolButton12"
+
+#: TFORM1.TOOLBUTTON13.CAPTION
+msgid "H&ardware help"
+msgstr "&Hardver segítség"
+
+#: TFORM1.TOOLBUTTON13.HINT
+msgid "Hardware help"
+msgstr "Hardver segítség"
+
+#: TFORM1.TOOLBUTTON14.CAPTION
+msgid "Re&fresh"
+msgstr "&Frissítés"
+
+#: TFORM1.TOOLBUTTON14.HINT
+msgid "Refresh displays"
+msgstr "Kijelzők frissítése"
+
+#: TFORM1.TOOLBUTTON2.CAPTION
+msgid "&Original profiles"
+msgstr "Eredeti pr&ofilok"
+
+#: TFORM1.TOOLBUTTON2.HINT
+msgid "Open original profile"
+msgstr "Eredeti profil megnyitás"
+
+#: TFORM1.TOOLBUTTON3.CAPTION
+msgid "&My profiles"
+msgstr "Saját pro&filok"
+
+#: TFORM1.TOOLBUTTON3.HINT
+msgid "Open my profile"
+msgstr "Saját profil megnyitás"
+
+#: TFORM1.TOOLBUTTON4.CAPTION
+msgid "&Save profile"
+msgstr "Profil menté&s"
+
+#: TFORM1.TOOLBUTTON4.HINT
+msgid "Save profile"
+msgstr "Profil mentés"
+
+#: TFORM1.TOOLBUTTON5.CAPTION
+msgid "as &picture (BMP)"
+msgstr "ké&pként (BMP)"
+
+#: TFORM1.TOOLBUTTON5.HINT
+msgid "Save result in BMP format"
+msgstr "Eredmény mentés BMP formátumban"
+
+#: TFORM1.TOOLBUTTON6.CAPTION
+msgid "as data (TXT)"
+msgstr "adatként (TXT)"
+
+#: TFORM1.TOOLBUTTON6.HINT
+msgid "Save result in TXT format"
+msgstr "Eredmény mentés TXT formátumban"
+
+#: TFORM1.TOOLBUTTON7.CAPTION
+msgid "ToolButton7"
+msgstr "ToolButton7"
+
+#: TFORM1.TOOLBUTTON8.CAPTION
+msgid "ToolButton8"
+msgstr "ToolButton8"
+
+#: TFORM1.TOOLBUTTON9.CAPTION
+msgid "Toggle &header"
+msgstr "Fejlé&c be/ki"
+
+#: TFORM1.TOOLBUTTON9.HINT
+msgid "Toggle header"
+msgstr "Fejléc be/ki"
+
+#: TFORM2.BUTTON1.CAPTION
+msgid "Close"
+msgstr "Bezárás"
+
+#: TFORM2.CAPTION
+msgid "About"
+msgstr "Névjegy"
+
+#: TFORM2.LABEL1.CAPTION
+msgid "CTT v0.1"
+msgstr "CTT v0.1"
+
+#: TFORM2.LABEL11.CAPTION
+msgid "Copyright (C) 2010 Pozsár Zsolt"
+msgstr "Copyright (C) 2010 Pozsár Zsolt"
+
+#: TFORM2.LABEL2.CAPTION
+msgid "Computer controlled Transistor Tester"
+msgstr "Számítógép vezérelt tranzisztor teszter"
+
+#: TFORM2.LABEL3.CAPTION
+msgid "Homepage:"
+msgstr "Honlap:"
+
+#: TFORM2.LABEL5.CAPTION
+msgid "info@pozsarzs.hu"
+msgstr "info@pozsarzs.hu"
+
+#: TFORM2.LABEL6.CAPTION
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: TFORM2.LABEL7.CAPTION
+msgid "Name:"
+msgstr "Név:"
+
+#: TFORM2.LABEL9.CAPTION
+msgid "Serial:"
+msgstr "Sorozatszám:"
+
+#: TFORM3.BUTTON1.CAPTION
+msgid "&Set"
+msgstr "&Beállít"
+
+#: TFORM3.BUTTON3.CAPTION
+msgid "&Cancel"
+msgstr "&Mégsem"
+
+#: TFORM3.BUTTON4.CAPTION
+msgid "Button4"
+msgstr "Button4"
+
+#: TFORM3.CAPTION
+msgid "Set serial"
+msgstr "Sorozatszám beállítás"
+
+#: TFORM3.LABEL1.CAPTION
+msgid "Your serial number:"
+msgstr "Az Ön sorozatszáma:"
+
+#: TFORM3.STATICTEXT1.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM3.STATICTEXT2.CAPTION
+msgid "-"
+msgstr "-"
+
+#: TFORM4.BUTTON1.CAPTION
+msgid "&Set"
+msgstr "&Beállít"
+
+#: TFORM4.BUTTON2.CAPTION
+msgid "&Cancel"
+msgstr "&Mégsem"
+
+#: TFORM4.BUTTON4.CAPTION
+msgid "..."
+msgstr "..."
+
+#: TFORM4.BUTTON5.CAPTION
+msgid "..."
+msgstr "..."
+
+#: TFORM4.CAPTION
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: TFORM4.CHECKBOX1.CAPTION
+msgid "Offline mode"
+msgstr "Off-line mód"
+
+#: TFORM4.COMBOBOX1.TEXT
+msgid "378H"
+msgstr "378H"
+
+#: TFORM4.LABEL1.CAPTION
+msgid "Browser application:"
+msgstr "Böngésző alkalmazás:"
+
+#: TFORM4.LABEL2.CAPTION
+msgid "Mailer application:"
+msgstr "Levelező alkalmazás:"
+
+#: TFORM4.LABEL3.CAPTION
+msgid "Port:"
+msgstr "Port:"
+
+#: TFORM4.RADIOGROUP1.CAPTION
+msgid "Display color"
+msgstr "Kijelzőszín"
+
