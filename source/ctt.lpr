@@ -31,7 +31,8 @@ begin
     writeln('v0.1');
     halt(0);
   end;
-  Application.Title := 'CTT-demo * transistor tester and characteristic curve plotter';
+  Application.Title:='CTT-demo * Transistor tester and characteristic curve '
+    +'plotter';
   {$I ctt.lrs}
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);

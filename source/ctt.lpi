@@ -4,7 +4,7 @@
     <Version Value="9"/>
     <General>
       <MainUnit Value="0"/>
-      <Title Value="CTT Transistor tester [DEMO]"/>
+      <Title Value="CTT-demo * Transistor tester and characteristic curve plotter"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
     </General>
@@ -15,7 +15,7 @@
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="1"/>
-      <BuildNr Value="611"/>
+      <BuildNr Value="612"/>
       <StringTable FileDescription="Computer controlled Transistor Tester" LegalCopyright="(C)2010 Pozsár Zsolt" OriginalFilename="ctt.exe" ProductVersion="0.1.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
@@ -42,11 +42,12 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="9">
+    <Units Count="10">
       <Unit0>
         <Filename Value="ctt.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cttdemo"/>
+        <IsVisibleTab Value="True"/>
         <CursorPos X="4" Y="2"/>
         <UsageCount Value="97"/>
         <Loaded Value="True"/>
@@ -59,7 +60,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="4" Y="3"/>
+        <TopLine Value="310"/>
+        <CursorPos Y="321"/>
         <UsageCount Value="97"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -71,6 +73,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="4"/>
+        <TopLine Value="97"/>
         <CursorPos X="5" Y="119"/>
         <UsageCount Value="96"/>
         <Loaded Value="True"/>
@@ -79,13 +82,14 @@
       <Unit3>
         <Filename Value=""/>
         <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
       </Unit3>
       <Unit4>
         <Filename Value="commonproc.pp"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="4" Y="2"/>
+        <TopLine Value="58"/>
+        <CursorPos Y="69"/>
         <UsageCount Value="94"/>
         <Loaded Value="True"/>
       </Unit4>
@@ -96,6 +100,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="3"/>
+        <TopLine Value="132"/>
         <CursorPos X="60" Y="154"/>
         <UsageCount Value="92"/>
         <Loaded Value="True"/>
@@ -119,123 +124,130 @@
         <CursorPos X="6" Y="517"/>
         <UsageCount Value="10"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="synapse/synsock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="10" Y="68"/>
+        <UsageCount Value="10"/>
+      </Unit9>
     </Units>
     <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="586" Column="40" TopLine="565"/>
+        <Caret Line="1079" Column="3" TopLine="1069"/>
       </Position1>
       <Position2>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="638" Column="40" TopLine="625"/>
+        <Caret Line="1083" Column="18" TopLine="1069"/>
       </Position2>
       <Position3>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="639" Column="41" TopLine="625"/>
+        <Caret Line="734" Column="3" TopLine="728"/>
       </Position3>
       <Position4>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="645" Column="39" TopLine="625"/>
+        <Caret Line="881" Column="3" TopLine="878"/>
       </Position4>
       <Position5>
-        <Filename Value="commonproc.pp"/>
-        <Caret Line="13" Column="27"/>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="880" Column="3" TopLine="877"/>
       </Position5>
       <Position6>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="646" Column="40" TopLine="625"/>
+        <Caret Line="879" Column="3" TopLine="876"/>
       </Position6>
       <Position7>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1057" TopLine="1053"/>
+        <Caret Line="878" Column="3" TopLine="875"/>
       </Position7>
       <Position8>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1068" TopLine="1056"/>
+        <Caret Line="877" Column="3" TopLine="874"/>
       </Position8>
       <Position9>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="966" Column="3" TopLine="963"/>
+        <Caret Line="876" Column="3" TopLine="873"/>
       </Position9>
       <Position10>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1038" Column="3" TopLine="1035"/>
+        <Caret Line="875" Column="3" TopLine="872"/>
       </Position10>
       <Position11>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1075" TopLine="1074"/>
+        <Caret Line="881" Column="3" TopLine="878"/>
       </Position11>
       <Position12>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1081" TopLine="1069"/>
+        <Caret Line="469" Column="10" TopLine="467"/>
       </Position12>
       <Position13>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1079" Column="3" TopLine="1069"/>
+        <Caret Line="468" Column="10" TopLine="466"/>
       </Position13>
       <Position14>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="1083" Column="18" TopLine="1069"/>
+        <Caret Line="467" Column="10" TopLine="465"/>
       </Position14>
       <Position15>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="734" Column="3" TopLine="728"/>
+        <Filename Value="ctt.lpr"/>
+        <Caret Line="30" TopLine="8"/>
       </Position15>
       <Position16>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="881" Column="3" TopLine="878"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="353" Column="27" TopLine="340"/>
       </Position16>
       <Position17>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="880" Column="3" TopLine="877"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="885" Column="17" TopLine="864"/>
       </Position17>
       <Position18>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="879" Column="3" TopLine="876"/>
+        <Caret Line="3" Column="4"/>
       </Position18>
       <Position19>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="878" Column="3" TopLine="875"/>
+        <Caret Line="23" Column="13" TopLine="11"/>
       </Position19>
       <Position20>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="877" Column="3" TopLine="874"/>
+        <Caret Line="320" TopLine="309"/>
       </Position20>
       <Position21>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="876" Column="3" TopLine="873"/>
+        <Caret Line="323" TopLine="312"/>
       </Position21>
       <Position22>
         <Filename Value="frmmain.pp"/>
-        <Caret Line="875" Column="3" TopLine="872"/>
+        <Caret Line="1150" TopLine="1139"/>
       </Position22>
       <Position23>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="881" Column="3" TopLine="878"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="2" Column="4"/>
       </Position23>
       <Position24>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="469" Column="10" TopLine="467"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="3" Column="8"/>
       </Position24>
       <Position25>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="468" Column="10" TopLine="466"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="540" TopLine="532"/>
       </Position25>
       <Position26>
-        <Filename Value="frmmain.pp"/>
-        <Caret Line="467" Column="10" TopLine="465"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="573" TopLine="562"/>
       </Position26>
       <Position27>
-        <Filename Value="ctt.lpr"/>
-        <Caret Line="30" TopLine="8"/>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="585" TopLine="576"/>
       </Position27>
       <Position28>
         <Filename Value="commonproc.pp"/>
-        <Caret Line="353" Column="27" TopLine="340"/>
+        <Caret Line="687" TopLine="676"/>
       </Position28>
       <Position29>
-        <Filename Value="commonproc.pp"/>
-        <Caret Line="885" Column="17" TopLine="864"/>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="4"/>
       </Position29>
     </JumpHistory>
   </ProjectOptions>
@@ -244,6 +256,7 @@
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <OtherUnitFiles Value="synapse;convert"/>
+      <UnitOutputDirectory Value="/home/pozsarzs/Git/PROG_ctt-demo-sw/source/lib/i386-linux"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>

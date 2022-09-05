@@ -1,14 +1,14 @@
 object Form4: TForm4
-  Left = 376
-  Height = 6
-  Top = 261
-  Width = 438
+  Left = 215
+  Height = 186
+  Top = 149
+  Width = 440
   ActiveControl = Button4
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'Preferences'
-  ClientHeight = 6
-  ClientWidth = 438
+  ClientHeight = 186
+  ClientWidth = 440
   Icon.Data = {
     5E07000000000100010018180000010018004807000016000000280000001800
     0000300000000100180000000000C0060000120B0000120B0000000000000000

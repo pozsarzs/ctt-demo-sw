@@ -66,7 +66,6 @@ function measure(m: byte): boolean;
 function saveprofile(filename: string): boolean;
 function searchupdate: boolean;
 procedure cleardisplay(m: byte);
-procedure crk;
 procedure loadcfg;
 procedure makeuserdir;
 procedure runbrowser(url: string);
@@ -283,55 +282,37 @@ begin
 
   // -- Mode1-Mode5 --
   if m < 6 then
-    if r = False then
-    begin
-      str(random(99) + 1, s);
-      mdata[m] := s;
-    end
-    else
-    begin
-      // tényleges mérés
-    end;
+  begin
+    str(random(99) + 1, s);
+    mdata[m] := s;
+  end;
 
   // -- Mode6 --
   if m = 6 then
-    if r = False then
-      for b := 7 to 46 do
-        mdata[b] := idemo[b - 6]
-    else
-    begin
-      // tényleges mérés
-    end;
+  begin
+    for b := 7 to 46 do
+      mdata[b] := idemo[b - 6]
+  end;
 
   // -- Mode7 --
   if m = 7 then
-    if r = False then
-    begin
-      for b := 47 to 86 do
-        mdata[b] := o1demo[b - 46];
-      for b := 87 to 126 do
-        mdata[b] := o2demo[b - 86];
-      for b := 127 to 166 do
-        mdata[b] := o3demo[b - 126];
-      for b := 167 to 206 do
-        mdata[b] := o4demo[b - 166];
-    end
-    else
-    begin
-      // tényleges mérés
-    end;
+  begin
+    for b := 47 to 86 do
+      mdata[b] := o1demo[b - 46];
+    for b := 87 to 126 do
+      mdata[b] := o2demo[b - 86];
+    for b := 127 to 166 do
+      mdata[b] := o3demo[b - 126];
+    for b := 167 to 206 do
+      mdata[b] := o4demo[b - 166];
+  end;
 
   // -- Mode8 --
   if m = 8 then
-    if r = False then
-    begin
-      str(random(150) + 25, s);
-      mdata[6] := s;
-    end
-    else
-    begin
-      // tényleges mérés
-    end;
+  begin
+    str(random(150) + 25, s);
+    mdata[6] := s;
+  end;
 end;
 
 // save profile
@@ -344,8 +325,8 @@ begin
   for b := 4 to 79 do
     Write(t, '-');
   writeln(t, '+');
-  writeln(t, '# | CTT v0.1 * Transistor tester                                               |');
-  writeln(t, '# | Copyright (C) 2010 Pozsar Zsolt <info@pozsarzs.hu>                         |');
+  writeln(t, '# | CTT-demo v0.1 * transistor tester and characteristic curve plotter         |');
+  writeln(t, '# | Copyright (C) 2010-2022 Pozsar Zsolt <pozsarzs@gmail.com>                  |');
   writeln(t, '# | *.pro                                                                      |');
   writeln(t, '# | Transistor profile                                                         |');
   Write(t, '# +');
@@ -555,20 +536,6 @@ begin
   end;
 end;
 
-// check registration key
-procedure crk;
-begin
-  r := False;
-  if FSearch('reg.key', exepath) <> '' then
-  begin
-    username := checkregkey(exepath + 'reg.key', serialnumber);
-    if (username = '!') or (username = ' ') then
-      r := False
-    else
-      r := True;
-  end;
-end;
-
 // load configuration
 procedure loadcfg;
 var
@@ -602,7 +569,6 @@ begin
     reset(t);
     browserapp := '';
     mailerapp := '';
-    serialnumber := '';
     displaycolor := '';
     repeat
       readln(t, s);
@@ -615,9 +581,6 @@ begin
       if s[1] + s[2] + s[3] = 'DC=' then
         for b := 4 to length(s) do
           displaycolor := displaycolor + s[b];
-      if s[1] + s[2] + s[3] = 'SN=' then
-        for b := 4 to length(s) do
-          serialnumber := serialnumber + s[b];
       if s[1] + s[2] + s[3] = 'BA=' then
         baseaddress := s[4];
       if (baseaddress <> '1') and (baseaddress <> '2') and (baseaddress <> '3') then
@@ -720,7 +683,6 @@ begin
   writeln(t, '+');
   writeln(t, 'WB=' + browserapp);
   writeln(t, 'MC=' + mailerapp);
-  writeln(t, 'SN=' + serialnumber);
   writeln(t, 'BA=' + baseaddress);
   writeln(t, 'DC=' + displaycolor);
   Write(t, 'OM=');

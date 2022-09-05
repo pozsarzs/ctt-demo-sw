@@ -20,7 +20,7 @@ interface
 uses
   Classes, SysUtils, process, FileUtil, LResources, Forms, Controls, Graphics,
   Dialogs, Menus, ComCtrls, ExtCtrls, StdCtrls, Spin, ExtDlgs, Grids, Buttons,
-  frmabout, frmserial, frmpref, commonproc, dos;
+  frmabout, frmpref, commonproc, dos;
 
 type
   { TForm1 }
@@ -218,7 +218,6 @@ type
     procedure MenuItem7Click(Sender: TObject);
     procedure MenuItem9Click(Sender: TObject);
     procedure TabSheet1Show(Sender: TObject);
-    procedure ToolBar1Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -317,15 +316,8 @@ begin
     StatusBar1.Panels.Items[1].Text := ' ' + MESSAGE03
   else
     StatusBar1.Panels.Items[1].Text := ' ' + MESSAGE04;
-  MenuItem6.Enabled := not offline;
-  MenuItem7.Enabled := not offline;
   MenuItem14.Enabled := not offline;
   MenuItem20.Enabled := not offline;
-  crk;
-  if commonproc.r = False then
-    StatusBar1.Panels.Items[0].Text := ' ' + MESSAGE01
-  else
-    StatusBar1.Panels.Items[0].Text := ' ' + MESSAGE02;
   case commonproc.baseaddress of
     '1': StatusBar1.Panels.Items[2].Text := ' 378H';
     '2': StatusBar1.Panels.Items[2].Text := ' 278H';
@@ -1153,8 +1145,6 @@ begin
     StatusBar1.Panels.Items[1].Text := ' ' + MESSAGE03
   else
     StatusBar1.Panels.Items[1].Text := ' ' + MESSAGE04;
-  MenuItem6.Enabled := not offline;
-  MenuItem7.Enabled := not offline;
   MenuItem14.Enabled := not offline;
   MenuItem20.Enabled := not offline;
   case commonproc.baseaddress of
