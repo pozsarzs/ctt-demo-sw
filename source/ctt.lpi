@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="CTT Transistor tester [DEMO]"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N Value="True"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MinorVersionNr Value="1"/>
+      <BuildNr Value="611"/>
+      <StringTable FileDescription="Computer controlled Transistor Tester" LegalCopyright="(C)2010 Pozsár Zsolt" OriginalFilename="ctt.exe" ProductVersion="0.1.0.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="ctt.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cttdemo"/>
+        <CursorPos X="4" Y="2"/>
+        <UsageCount Value="97"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="frmmain.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="4" Y="3"/>
+        <UsageCount Value="97"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="frmabout.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="5" Y="119"/>
+        <UsageCount Value="96"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value=""/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="commonproc.pp"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="4" Y="2"/>
+        <UsageCount Value="94"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="frmpref.pp"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form4"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="60" Y="154"/>
+        <UsageCount Value="92"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="synapse/synaip.pas"/>
+        <UsageCount Value="14"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="demodata.pp"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="synapse/ssfpc.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="488"/>
+        <CursorPos X="6" Y="517"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+    </Units>
+    <JumpHistory Count="29" HistoryIndex="28">
+      <Position1>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="586" Column="40" TopLine="565"/>
+      </Position1>
+      <Position2>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="638" Column="40" TopLine="625"/>
+      </Position2>
+      <Position3>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="639" Column="41" TopLine="625"/>
+      </Position3>
+      <Position4>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="645" Column="39" TopLine="625"/>
+      </Position4>
+      <Position5>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="13" Column="27"/>
+      </Position5>
+      <Position6>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="646" Column="40" TopLine="625"/>
+      </Position6>
+      <Position7>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1057" TopLine="1053"/>
+      </Position7>
+      <Position8>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1068" TopLine="1056"/>
+      </Position8>
+      <Position9>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="966" Column="3" TopLine="963"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1038" Column="3" TopLine="1035"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1075" TopLine="1074"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1081" TopLine="1069"/>
+      </Position12>
+      <Position13>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1079" Column="3" TopLine="1069"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="1083" Column="18" TopLine="1069"/>
+      </Position14>
+      <Position15>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="734" Column="3" TopLine="728"/>
+      </Position15>
+      <Position16>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="881" Column="3" TopLine="878"/>
+      </Position16>
+      <Position17>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="880" Column="3" TopLine="877"/>
+      </Position17>
+      <Position18>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="879" Column="3" TopLine="876"/>
+      </Position18>
+      <Position19>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="878" Column="3" TopLine="875"/>
+      </Position19>
+      <Position20>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="877" Column="3" TopLine="874"/>
+      </Position20>
+      <Position21>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="876" Column="3" TopLine="873"/>
+      </Position21>
+      <Position22>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="875" Column="3" TopLine="872"/>
+      </Position22>
+      <Position23>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="881" Column="3" TopLine="878"/>
+      </Position23>
+      <Position24>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="469" Column="10" TopLine="467"/>
+      </Position24>
+      <Position25>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="468" Column="10" TopLine="466"/>
+      </Position25>
+      <Position26>
+        <Filename Value="frmmain.pp"/>
+        <Caret Line="467" Column="10" TopLine="465"/>
+      </Position26>
+      <Position27>
+        <Filename Value="ctt.lpr"/>
+        <Caret Line="30" TopLine="8"/>
+      </Position27>
+      <Position28>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="353" Column="27" TopLine="340"/>
+      </Position28>
+      <Position29>
+        <Filename Value="commonproc.pp"/>
+        <Caret Line="885" Column="17" TopLine="864"/>
+      </Position29>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="synapse;convert"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <Verbosity>
+        <ShowWarn Value="False"/>
+        <ShowNotes Value="False"/>
+        <ShowHints Value="False"/>
+      </Verbosity>
+      <WriteFPCLogo Value="False"/>
+      <CreateMakefileOnBuild Value="True"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

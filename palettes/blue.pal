@@ -1,6 +1,6 @@
 # +----------------------------------------------------------------------------+
-# | CTT v0.1pre1-demo * Transistor tester                                      |
-# | Copyright (C) 2010 Pozsar Zsolt <info@pozsarzs.hu>                         |
+# | CTT-demo v0.1 * transistor tester and characteristic curve plotter         |
+# | Copyright (C) 2010-2022 Pozsar Zsolt <pozsarzs@gmail.com>                  |
 # | blue.pal                                                                   |
 # | Display colour setting                                                     |
 # +----------------------------------------------------------------------------+
