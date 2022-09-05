@@ -193,7 +193,6 @@ type
       Shift: TShiftState; X, Y: integer);
     procedure Image3MouseMove(Sender: TObject; Shift: TShiftState; X, Y: integer);
     procedure MenuItem10Click(Sender: TObject);
-    procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem14Click(Sender: TObject);
     procedure MenuItem16Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
@@ -213,9 +212,6 @@ type
     procedure MenuItem43Click(Sender: TObject);
     procedure MenuItem44Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
-    procedure MenuItem5Click(Sender: TObject);
-    procedure MenuItem6Click(Sender: TObject);
-    procedure MenuItem7Click(Sender: TObject);
     procedure MenuItem9Click(Sender: TObject);
     procedure TabSheet1Show(Sender: TObject);
   private
@@ -261,7 +257,7 @@ resourcestring
   MESSAGE24 = 'Open own profile';
   MESSAGE25 = 'Profile load error, creating a new one';
   MESSAGE26 = '(unknown)';
-  MESSAGE27 = 'Invalid or missing hardware key!';
+  MESSAGE27 = 'Invalid or missing hardware!';
   MESSAGE28 = 'Save result in BMP format';
   MESSAGE29 = 'Save result in TXT format';
   MESSAGE30 = 'Bitmap files (*.bmp)|*.bmp|';
@@ -276,9 +272,8 @@ resourcestring
   MESSAGE39 = 'marker: ';
   MESSAGE40 = 'Bipolar transistor input characteristic';
   MESSAGE41 = 'Bipolar transistor output characteristic';
-  MESSAGE42 = 'This application is a pre release demo version of the CTT.';
+  MESSAGE42 = 'This application is a demo version of the CTT.';
   MESSAGE43 = 'You can view and test the application, but you can not measure.';
-  MESSAGE44 = 'The CTT project is under development. Follow it on this website: http://www.pozsarzs.hu';
 
 implementation
 
@@ -331,9 +326,6 @@ begin
   {$IFDEF LINUX}
   findfirst(exepath + 'packages/*.png', anyfile, searchresult);
   {$ENDIF}
-  {$IFDEF WIN32}
-  findfirst(exepath + 'packages\*.png', anyfile, searchresult);
-  {$ENDIF}
   b := 0;
   while doserror = 0 do
   begin
@@ -356,10 +348,6 @@ begin
   Combobox2.ItemIndex := 0;
   {$IFDEF LINUX}
   Image1.Picture.LoadFromFile(exepath + 'packages/' + lowercase(
-    ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
-  {$ENDIF}
-  {$IFDEF WIN32}
-  Image1.Picture.LoadFromFile(exepath + 'packages\' + lowercase(
     ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
   {$ENDIF}
   Combobox3.Items.Add(MESSAGE16);
@@ -408,7 +396,7 @@ begin
   StringGrid1.Cells[1, 0] := MESSAGE13;
   StringGrid1.Cells[2, 0] := MESSAGE15;
   Screen.Cursors[1] := LoadCursorFromLazarusResource('haircross');
-  ShowMessage(MESSAGE42 + ' ' + MESSAGE43 + #13 + #13 + MESSAGE44);
+  ShowMessage(MESSAGE42 + ' ' + MESSAGE43);
 end;
 
 // on close query event;
@@ -460,10 +448,6 @@ procedure TForm1.ComboBox2Change(Sender: TObject);
 begin
   {$IFDEF LINUX}
   Image1.Picture.LoadFromFile(exepath + 'packages/' + lowercase(
-    ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
-  {$ENDIF}
-  {$IFDEF WIN32}
-  Image1.Picture.LoadFromFile(exepath + 'packages\' + lowercase(
     ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
   {$ENDIF}
   if changedprofile = False then
@@ -942,7 +926,7 @@ begin
   if saveprofile(profilefilename) = True then
   begin
     changedprofile := False;
-    Form1.Caption := 'CTT - ' + profilename;
+    Form1.Caption := commonproc.APPNAME+' - ' + profilename;
   end;
 end;
 
@@ -970,7 +954,7 @@ begin
   if saveprofile(profilefilename) = True then
   begin
     changedprofile := False;
-    Form1.Caption := 'CTT - ' + profilename;
+    Form1.Caption := commonproc.APPNAME+' - ' + profilename;
   end;
 end;
 
@@ -981,9 +965,6 @@ var
 begin
   {$IFDEF LINUX}
   SaveDialog1.InitialDir := userdir + '..';
-  {$ENDIF}
-  {$IFDEF WIN32}
-  SaveDialog1.InitialDir := userdir + '..\..';
   {$ENDIF}
   SaveDialog1.Title := MESSAGE28;
   SaveDialog1.Filename := Edit2.Text + '.bmp';
@@ -1018,9 +999,6 @@ var
 begin
   {$IFDEF LINUX}
   SaveDialog1.InitialDir := userdir + '..';
-  {$ENDIF}
-  {$IFDEF WIN32}
-  SaveDialog1.InitialDir := userdir + '..\..';
   {$ENDIF}
   SaveDialog1.Title := MESSAGE29;
   SaveDialog1.Filename := Edit2.Text + '.txt';
@@ -1064,21 +1042,6 @@ end;
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
   Close;
-end;
-
-procedure TForm1.MenuItem5Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.MenuItem6Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.MenuItem7Click(Sender: TObject);
-begin
-
 end;
 
 //-- View menu -----------------------------------------------------------------
@@ -1155,25 +1118,11 @@ begin
 end;
 
 // -- Help menu ----------------------------------------------------------------
-// Software help
+// Help
 procedure TForm1.MenuItem10Click(Sender: TObject);
 begin
 {$IFDEF LINUX}
   runbrowser(exepath + 'help/' + lang + '/index.html');
-{$ENDIF}
-{$IFDEF WIN32}
-  runbrowser(exepath + 'help\' + lang + '\index.html');
-{$ENDIF}
-end;
-
-// Hardware help
-procedure TForm1.MenuItem11Click(Sender: TObject);
-begin
-{$IFDEF LINUX}
-  runbrowser(exepath + 'help/' + lang + '/index.html');
-{$ENDIF}
-{$IFDEF WIN32}
-  runbrowser(exepath + 'help\' + lang + '\index.html');
 {$ENDIF}
 end;
 

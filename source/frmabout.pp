@@ -24,7 +24,6 @@ uses
 type
   { TForm2 }
   TForm2 = class(TForm)
-    Bevel1: TBevel;
     Bevel2: TBevel;
     Button1: TButton;
     Label1: TLabel;
@@ -34,10 +33,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
     Label8: TLabel;
-    Label9: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Label4Click(Sender: TObject);
@@ -55,9 +51,6 @@ type
 var
   Form2: TForm2;
 
-resourcestring
-  MESSAGE01 = 'Demo mode,';
-
 implementation
 
 { TForm2 }
@@ -65,14 +58,12 @@ implementation
 // on show event
 procedure TForm2.FormShow(Sender: TObject);
 begin
-  Label1.Caption := 'CTT v' + commonproc.VERSION;
+  Label1.Caption := commonproc.APPNAME+' v' + commonproc.VERSION;
   Label4.Caption := commonproc.HOMEPAGE;
   Label4.Enabled := not commonproc.offline;
   Label5.Enabled := not commonproc.offline;
   Label8.Font.Color := clRed;
   Label10.Font.Color := clRed;
-  Label8.Caption := MESSAGE01;
-  Label10.Caption := MESSAGE02;
 end;
 
 // homepage

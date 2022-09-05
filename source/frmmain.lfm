@@ -1,14 +1,15 @@
 object Form1: TForm1
-  Left = 99
-  Height = 672
-  Top = 6
-  Width = 722
+  Left = 208
+  Height = 679
+  Top = 28
+  Width = 733
   ActiveControl = Edit2
   BorderIcons = [biSystemMenu, biMinimize]
-  BorderStyle = bsSingle
   Caption = 'CTT - new profile'
-  ClientHeight = 649
-  ClientWidth = 722
+  ClientHeight = 656
+  ClientWidth = 733
+  Constraints.MinHeight = 679
+  Constraints.MinWidth = 733
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
@@ -23,7 +24,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 35
-    Width = 32
+    Width = 34
     Caption = 'Type:'
     ParentColor = False
   end
@@ -47,7 +48,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 119
-    Width = 50
+    Width = 51
     Caption = 'Icm [A]:'
     ParentColor = False
   end
@@ -55,7 +56,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 149
-    Width = 64
+    Width = 65
     Caption = 'Ibm [mA]:'
     ParentColor = False
   end
@@ -63,7 +64,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 175
-    Width = 45
+    Width = 47
     Caption = 'Pd [W]:'
     ParentColor = False
   end
@@ -71,7 +72,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 205
-    Width = 47
+    Width = 50
     Caption = 'Polarity'
     ParentColor = False
   end
@@ -79,7 +80,7 @@ object Form1: TForm1
     Left = 8
     Height = 30
     Top = 256
-    Width = 57
+    Width = 58
     Caption = 'Package &'#10'pin-out:'
     ParentColor = False
   end
@@ -93,7 +94,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 407
-    Width = 46
+    Width = 47
     Caption = 'Pin #1:'
     ParentColor = False
   end
@@ -101,7 +102,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 436
-    Width = 46
+    Width = 47
     Caption = 'Pin #2:'
     ParentColor = False
   end
@@ -109,7 +110,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 466
-    Width = 46
+    Width = 47
     Caption = 'Pin #3:'
     ParentColor = False
   end
@@ -117,7 +118,7 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 498
-    Width = 46
+    Width = 47
     Caption = 'Pin #4:'
     ParentColor = False
   end
@@ -125,7 +126,7 @@ object Form1: TForm1
     Left = 9
     Height = 15
     Top = 528
-    Width = 46
+    Width = 47
     Caption = 'Pin #5:'
     ParentColor = False
   end
@@ -133,7 +134,7 @@ object Form1: TForm1
     Left = 9
     Height = 15
     Top = 558
-    Width = 46
+    Width = 47
     Caption = 'Pin #6:'
     ParentColor = False
   end
@@ -141,18 +142,19 @@ object Form1: TForm1
     Left = 9
     Height = 15
     Top = 590
-    Width = 46
+    Width = 47
     Caption = 'Pin #7:'
     ParentColor = False
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 19
-    Top = 630
-    Width = 722
+    Top = 637
+    Width = 733
     Panels = <    
       item
         Alignment = taCenter
+        Text = 'DEMO'
         Width = 50
       end    
       item
@@ -257,18 +259,22 @@ object Form1: TForm1
     Text = 'NPN'
   end
   object PageControl1: TPageControl
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = StatusBar1
     Left = 184
-    Height = 602
+    Height = 605
     Top = 24
-    Width = 738
-    ActivePage = TabSheet4
+    Width = 541
+    ActivePage = TabSheet1
     Anchors = [akTop, akLeft, akRight, akBottom]
-    TabIndex = 2
+    BorderSpacing.Around = 8
+    TabIndex = 0
     TabOrder = 17
     object TabSheet1: TTabSheet
       Caption = 'Parameters'
-      ClientHeight = 569
-      ClientWidth = 732
+      ClientHeight = 572
+      ClientWidth = 535
       OnShow = TabSheet1Show
       object Bevel2: TBevel
         Left = 8
@@ -282,7 +288,7 @@ object Form1: TForm1
         Left = 8
         Height = 16
         Top = 203
-        Width = 152
+        Width = 154
         Caption = 'Breakdown voltage'
         Font.Height = 14
         Font.Style = [fsBold]
@@ -304,7 +310,7 @@ object Form1: TForm1
         Left = 278
         Height = 15
         Top = 15
-        Width = 67
+        Width = 66
         Caption = 'Warning!'
         Font.Color = clRed
         Font.Style = [fsBold]
@@ -328,7 +334,7 @@ object Form1: TForm1
         Left = 279
         Height = 15
         Top = 179
-        Width = 147
+        Width = 149
         Caption = 'Measure voltage: 100V'
         ParentColor = False
       end
@@ -336,7 +342,7 @@ object Form1: TForm1
         Left = 278
         Height = 15
         Top = 539
-        Width = 131
+        Width = 133
         Caption = 'Measure voltage: 6V'
         ParentColor = False
       end
@@ -798,8 +804,8 @@ object Form1: TForm1
     end
     object TabSheet2: TTabSheet
       Caption = 'Base characteristic'
-      ClientHeight = 569
-      ClientWidth = 732
+      ClientHeight = 572
+      ClientWidth = 535
       OnShow = TabSheet1Show
       object Bevel4: TBevel
         Left = 8
@@ -816,29 +822,49 @@ object Form1: TForm1
         OnMouseMove = Image2MouseMove
       end
       object Button1: TButton
-        Left = 450
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 452
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Caption = '&Start'
         OnClick = Button1Click
         TabOrder = 3
       end
       object BitBtn6: TBitBtn
-        Left = 368
+        AnchorSideRight.Control = Button1
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 369
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Caption = '&Clear'
         OnClick = BitBtn6Click
         TabOrder = 2
       end
       object Memo1: TMemo
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Button1
         Left = 9
-        Height = 115
+        Height = 127
         Top = 404
-        Width = 516
+        Width = 518
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Font.Color = clBlack
+        Font.Pitch = fpFixed
         ParentFont = False
         ReadOnly = True
         ScrollBars = ssAutoBoth
@@ -846,10 +872,14 @@ object Form1: TForm1
         WordWrap = False
       end
       object Button8: TButton
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
         Left = 9
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
         Caption = '&Details...'
         Enabled = False
         TabOrder = 1
@@ -857,8 +887,8 @@ object Form1: TForm1
     end
     object TabSheet4: TTabSheet
       Caption = 'Collector characteristic'
-      ClientHeight = 569
-      ClientWidth = 732
+      ClientHeight = 572
+      ClientWidth = 535
       OnShow = TabSheet1Show
       object Bevel5: TBevel
         Left = 8
@@ -875,29 +905,49 @@ object Form1: TForm1
         OnMouseMove = Image3MouseMove
       end
       object Button10: TButton
-        Left = 450
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet4
+        AnchorSideBottom.Side = asrBottom
+        Left = 452
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Caption = '&Start'
         OnClick = Button10Click
         TabOrder = 3
       end
       object BitBtn7: TBitBtn
-        Left = 368
+        AnchorSideRight.Control = Button10
+        AnchorSideBottom.Control = TabSheet4
+        AnchorSideBottom.Side = asrBottom
+        Left = 369
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Caption = '&Clear'
         OnClick = BitBtn7Click
         TabOrder = 2
       end
       object Memo2: TMemo
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Button10
         Left = 9
-        Height = 115
+        Height = 127
         Top = 404
-        Width = 516
+        Width = 518
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         Font.Color = clBlack
+        Font.Pitch = fpFixed
         ParentFont = False
         ReadOnly = True
         ScrollBars = ssAutoBoth
@@ -905,10 +955,14 @@ object Form1: TForm1
         WordWrap = False
       end
       object Button9: TButton
+        AnchorSideBottom.Control = TabSheet4
+        AnchorSideBottom.Side = asrBottom
         Left = 9
         Height = 25
-        Top = 533
+        Top = 539
         Width = 75
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
         Caption = '&Details...'
         Enabled = False
         TabOrder = 1
@@ -916,14 +970,20 @@ object Form1: TForm1
     end
     object TabSheet3: TTabSheet
       Caption = 'Pair select'
-      ClientHeight = 569
-      ClientWidth = 732
+      ClientHeight = 572
+      ClientWidth = 535
       OnShow = TabSheet1Show
       object Label27: TLabel
-        Left = 510
-        Height = 21
-        Top = 23
-        Width = 16
+        AnchorSideTop.Control = SpinEdit1
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 514
+        Height = 16
+        Top = 27
+        Width = 13
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 8
         Caption = '%'
         Font.Height = 14
         ParentColor = False
@@ -931,17 +991,23 @@ object Form1: TForm1
       end
       object Label28: TLabel
         Left = 446
-        Height = 14
+        Height = 15
         Top = 8
-        Width = 59
+        Width = 66
         Caption = 'Tolerance:'
         ParentColor = False
       end
       object StringGrid1: TStringGrid
+        AnchorSideRight.Control = Button7
+        AnchorSideBottom.Control = TabSheet3
+        AnchorSideBottom.Side = asrBottom
         Left = 8
-        Height = 550
+        Height = 556
         Top = 8
-        Width = 430
+        Width = 436
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
         ColCount = 3
         FixedColor = 16312279
         FixedCols = 0
@@ -956,27 +1022,42 @@ object Form1: TForm1
         )
       end
       object Button7: TButton
-        Left = 446
+        AnchorSideTop.Control = SpinEdit1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 452
         Height = 25
-        Top = 55
+        Top = 56
         Width = 75
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 8
         Caption = '&Start'
         OnClick = Button7Click
         TabOrder = 2
       end
       object SpinEdit1: TSpinEdit
-        Left = 446
-        Height = 23
+        AnchorSideRight.Control = Label27
+        Left = 448
+        Height = 25
         Top = 23
         Width = 58
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 8
         TabOrder = 1
         Value = 5
       end
       object Button11: TButton
-        Left = 446
+        AnchorSideTop.Control = Button7
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 452
         Height = 25
-        Top = 87
+        Top = 89
         Width = 75
+        Anchors = [akTop, akRight]
+        BorderSpacing.Around = 8
         Caption = '&Clear'
         OnClick = Button11Click
         TabOrder = 3
@@ -1077,7 +1158,7 @@ object Form1: TForm1
     Left = 0
     Height = 26
     Top = 0
-    Width = 722
+    Width = 733
     Caption = 'ToolBar1'
     EdgeBorders = [ebTop, ebBottom]
     Images = ImageList1
@@ -1396,6 +1477,7 @@ object Form1: TForm1
         }
         ImageIndex = 4
         ShortCut = 16467
+        OnClick = MenuItem16Click
       end
       object MenuItem28: TMenuItem
         Caption = 'Save profile &as...'
@@ -1897,41 +1979,41 @@ object Form1: TForm1
         Caption = '&Help'
         Bitmap.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
-          2000000000000004000064000000640000000000000000000000000000000000
-          0000000000000000000000000000000000000000000000000000000000000000
-          0000000000001A1ABFBE1A1ABFEF1A1ABFFD1A1ABFDE1A1ABF53000000000000
-          00000000000000000000AD744423AC72417DAA703FDBA86D3CF3A76B3AF3A569
-          37DBA468357D241FB4AA1A1ABF1A1A1ABF291A1ABFFF1A1ABFE9000000000000
-          000000000000B57E5153B37C4EE6D7BBA3FFE9DACAFFECE0D1FFECE0D1FFE8D8
-          C8FFD3B59CFFA76C3AE6A46939541A1ABF4D1A1ABFFF1A1ABFF1000000000000
-          0000BD895F53BB875BF4E7D5C4FFE5D2BFFFC9A685FFB88E67FFB68A65FFC5A1
-          80FFE0CCBAFF9D91BEFF2721B3FE1A1ABFFF1A1ABFE11A1ABF5800000000C695
+          2000000000000004000064000000640000000000000000000000FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00AD744423AC72417DAA703FDBA86D3CF3A76B3AF3A569
+          37DBA468357DA3663323FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00B57E5153B37C4EE6D7BBA3FFE9DACAFFECE0D1FFECE0D1FFE8D8
+          C8FFD3B59CFFA76C3AE6A66A3853FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00BD895F53BB875BF4E7D5C4FFE5D2BFFFC9A685FFB88E67FFB68A65FFC5A1
+          80FFE0CCBAFFE3D0BEFFAB7040F4A96E3D53FFFFFF00FFFFFF00FFFFFF00C695
           6D22C3926AE5EAD8C9FFE3CDBAFFC0946BFFBA8C62FFCFB094FFCFB094FFB789
-          5FFFB28761FF2523BDFF1A1ABFFF885D64EBAD7343220000000000000000CC9E
+          5FFFB28761FFDAC0AAFFE4D1C0FFAE7546E5AD734322FFFFFF00FFFFFF00CC9E
           787EE4CCB9FFEAD6C5FFC79971FFBF9066FFBF9066FFF7F1ECFFF6F0EAFFB789
-          5FFFB7895FFF2924B5FF1A1ABFFFB59EAAFF9A6C5E891A1ABF9600000000D3A7
+          5FFFB7895FFFB58963FFE2CEBBFFD9BDA6FFB27B4D7EFFFFFF00FFFFFF00D3A7
           84DBEFE1D3FFD9B595FFC7986CFFC39569FFC19367FFBF9066FFBF9066FFBB8B
-          63FFB98A63FF8A697CFF352FB6FF1C1CBFFF1F1DBBFD1A1ABFD300000000D9B0
+          63FFB98A63FFB88A62FFCBA786FFEADCCCFFB88357DBFFFFFF00FFFFFF00D9B0
           8FF6F2E4D9FFD1A57AFFC5996BFFC4976AFFC49669FFFAF6F2FFF3EAE1FFC295
-          6DFFBE8F65FFBE8F64FFC0956DFFEFE3D5FFBF8C61F60000000000000000E0B9
+          6DFFBE8F65FFBE8F64FFC0956DFFEFE3D5FFBF8C61F6FFFFFF00FFFFFF00E0B9
           99F6F2E5DAFFD1A67EFFCC9D71FFC79A6CFFC5986BFFE2CCB6FFF8F3EEFFF6EE
-          E8FFD9BDA1FFC29468FFC59B71FFF0E2D6FFC5956CF60000000000000000E6C1
+          E8FFD9BDA1FFC29468FFC59B71FFF0E2D6FFC5956CF6FFFFFF00FFFFFF00E6C1
           A3DBF3E5D9FFDFBB9EFFCFA075FFCD9E72FFF5EBE3FFE4CBB4FFE7D3BFFFFBF8
-          F6FFE5D3BFFFC4986BFFD6B491FFEEE0D2FFCC9E78DB0000000000000000EBC9
+          F6FFE5D3BFFFC4986BFFD6B491FFEEE0D2FFCC9E78DBFFFFFF00FFFFFF00EBC9
           AD7EF4E3D4FFEFDCCDFFD5A87EFFD0A077FFFBF8F5FFFCF8F5FFFCF8F5FFFBF8
-          F5FFD1A881FFCFA47BFFEAD5C3FFEAD4C2FFD2A7837E0000000000000000F1D0
+          F5FFD1A881FFCFA47BFFEAD5C3FFEAD4C2FFD2A7837EFFFFFF00FFFFFF00F1D0
           B522EFCEB3E5F6E9DDFFECD8C6FFD7AC81FFDCBB9AFFF6ECE3FFF5ECE2FFE4C8
-          AEFFD2A77BFFE6CEBAFFF1E2D5FFDBB391E5D9B08E2200000000000000000000
-          0000F4D4BB53F2D2B8F4F7EADFFFEEDED0FFE3C1A7FFD8AE89FFD7AC86FFDDBB
-          9CFFEBD6C7FFF3E6D9FFE3BE9FF4E1BB9C530000000000000000000000000000
-          000000000000F6D8BF53F5D6BDE6F9E9DCFFF6E8DDFFF3E5DAFFF3E5DAFFF5E7
-          DCFFF5E4D6FFEBC8ACE6E9C6A953000000000000000000000000000000000000
-          00000000000000000000F9DBC423F8DAC27DF7D8C0DBF6D7BEF3F4D5BCF3F3D3
-          B9DBF1D1B77DF0CFB42300000000000000000000000000000000000000000000
-          0000000000000000000000000000000000000000000000000000000000000000
-          0000000000000000000000000000000000000000000000000000
+          AEFFD2A77BFFE6CEBAFFF1E2D5FFDBB391E5D9B08E22FFFFFF00FFFFFF00FFFF
+          FF00F4D4BB53F2D2B8F4F7EADFFFEEDED0FFE3C1A7FFD8AE89FFD7AC86FFDDBB
+          9CFFEBD6C7FFF3E6D9FFE3BE9FF4E1BB9C53FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00F6D8BF53F5D6BDE6F9E9DCFFF6E8DDFFF3E5DAFFF3E5DAFFF5E7
+          DCFFF5E4D6FFEBC8ACE6E9C6A953FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00F9DBC423F8DAC27DF7D8C0DBF6D7BEF3F4D5BCF3F3D3
+          B9DBF1D1B77DF0CFB423FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
         }
-        ImageIndex = 13
+        ImageIndex = 11
         ShortCut = 112
         OnClick = MenuItem10Click
       end

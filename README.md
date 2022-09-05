@@ -1,13 +1,13 @@
-**CTT - transistor tester and characteristic curve plotter**  
+**CTT-demo - transistor tester and characteristic curve plotter**  
 Copyright (C) 2010-2022 Pozsár Zsolt <pozsarzs@gmail.com>  
 Homepage: <http://www.pozsarzs.hu/>  
 GitHub: <https://github.com/pozsarzs/ctt-demo-sw>
 
 **Software**
 
- - architecture:       i386
+ - architecture:       i386, amd64
  - operation system:   Linux
- - version:            v0.1-demo
+ - version:            v0.1
  - language:           en, hu
  - licence:            EUPL v1.1 or later
  - user interface:     GUI

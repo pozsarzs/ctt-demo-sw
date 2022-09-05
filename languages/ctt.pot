@@ -24,14 +24,6 @@ msgstr ""
 msgid "Missing palette file!"
 msgstr ""
 
-#: frmabout.message01
-msgid "Demo mode,"
-msgstr ""
-
-#: frmabout.message02
-msgid "registration required!"
-msgstr ""
-
 #: frmmain.message01
 msgid "Demo"
 msgstr ""
@@ -140,7 +132,7 @@ msgid "(unknown)"
 msgstr ""
 
 #: frmmain.message27
-msgid "Invalid or missing hardware key!"
+msgid "Invalid or missing hardware!"
 msgstr ""
 
 #: frmmain.message28
@@ -202,15 +194,11 @@ msgid "Bipolar transistor output characteristic"
 msgstr ""
 
 #: frmmain.message42
-msgid "This application is a pre release demo version of the CTT."
+msgid "This application is a demo version of the CTT."
 msgstr ""
 
 #: frmmain.message43
 msgid "You can view and test the application, but you can not measure."
-msgstr ""
-
-#: frmmain.message44
-msgid "The CTT project is under development. Follow it on this website: http://www.pozsarzs.hu"
 msgstr ""
 
 #: frmpref.message01
@@ -253,674 +241,588 @@ msgstr ""
 msgid "black"
 msgstr ""
 
-#: frmserial.message01
-msgid "Wrong serial number!"
-msgstr ""
-
-#: TFORM1.BITBTN6.CAPTION
-msgctxt "TFORM1.BITBTN6.CAPTION"
+#: tform1.bitbtn6.caption
+msgctxt "tform1.bitbtn6.caption"
 msgid "&Clear"
 msgstr ""
 
-#: TFORM1.BITBTN7.CAPTION
+#: tform1.bitbtn7.caption
 msgctxt "TFORM1.BITBTN7.CAPTION"
 msgid "&Clear"
 msgstr ""
 
-#: TFORM1.BUTTON1.CAPTION
-msgctxt "TFORM1.BUTTON1.CAPTION"
+#: tform1.button1.caption
+msgctxt "tform1.button1.caption"
 msgid "&Start"
 msgstr ""
 
-#: TFORM1.BUTTON10.CAPTION
+#: tform1.button10.caption
 msgctxt "TFORM1.BUTTON10.CAPTION"
 msgid "&Start"
 msgstr ""
 
-#: TFORM1.BUTTON11.CAPTION
+#: tform1.button11.caption
 msgctxt "TFORM1.BUTTON11.CAPTION"
 msgid "&Clear"
 msgstr ""
 
-#: TFORM1.BUTTON2.CAPTION
-msgctxt "TFORM1.BUTTON2.CAPTION"
+#: tform1.button2.caption
+msgctxt "tform1.button2.caption"
 msgid "Start"
 msgstr ""
 
-#: TFORM1.BUTTON3.CAPTION
+#: tform1.button3.caption
 msgctxt "TFORM1.BUTTON3.CAPTION"
 msgid "Start"
 msgstr ""
 
-#: TFORM1.BUTTON4.CAPTION
+#: tform1.button4.caption
 msgctxt "TFORM1.BUTTON4.CAPTION"
 msgid "Start"
 msgstr ""
 
-#: TFORM1.BUTTON5.CAPTION
+#: tform1.button5.caption
 msgctxt "TFORM1.BUTTON5.CAPTION"
 msgid "Start"
 msgstr ""
 
-#: TFORM1.BUTTON6.CAPTION
+#: tform1.button6.caption
 msgctxt "TFORM1.BUTTON6.CAPTION"
 msgid "Start"
 msgstr ""
 
-#: TFORM1.BUTTON7.CAPTION
+#: tform1.button7.caption
 msgctxt "TFORM1.BUTTON7.CAPTION"
 msgid "&Start"
 msgstr ""
 
-#: TFORM1.BUTTON8.CAPTION
-msgctxt "TFORM1.BUTTON8.CAPTION"
+#: tform1.button8.caption
+msgctxt "tform1.button8.caption"
 msgid "&Details..."
 msgstr ""
 
-#: TFORM1.BUTTON9.CAPTION
+#: tform1.button9.caption
 msgctxt "TFORM1.BUTTON9.CAPTION"
 msgid "&Details..."
 msgstr ""
 
-#: TFORM1.CAPTION
+#: tform1.caption
 msgid "CTT - new profile"
 msgstr ""
 
-#: TFORM1.COMBOBOX1.TEXT
+#: tform1.combobox1.text
 msgid "NPN"
 msgstr ""
 
-#: TFORM1.EDIT1.TEXT
-msgctxt "TFORM1.EDIT1.TEXT"
+#: tform1.edit1.text
+msgctxt "tform1.edit1.text"
 msgid "(description)"
 msgstr ""
 
-#: TFORM1.EDIT2.TEXT
-msgctxt "TFORM1.EDIT2.TEXT"
+#: tform1.edit2.text
+msgctxt "tform1.edit2.text"
 msgid "new profile"
 msgstr ""
 
-#: TFORM1.GROUPBOX1.CAPTION
+#: tform1.groupbox1.caption
 msgid "BUce"
 msgstr ""
 
-#: TFORM1.GROUPBOX2.CAPTION
+#: tform1.groupbox2.caption
 msgid "BUcb"
 msgstr ""
 
-#: TFORM1.GROUPBOX3.CAPTION
+#: tform1.groupbox3.caption
 msgid "Ieb0"
 msgstr ""
 
-#: TFORM1.GROUPBOX4.CAPTION
+#: tform1.groupbox4.caption
 msgid "Icb0"
 msgstr ""
 
-#: TFORM1.GROUPBOX5.CAPTION
+#: tform1.groupbox5.caption
 msgid "Ice0"
 msgstr ""
 
-#: TFORM1.LABEL1.CAPTION
+#: tform1.label1.caption
 msgid "Type:"
 msgstr ""
 
-#: TFORM1.LABEL10.CAPTION
+#: tform1.label10.caption
 msgid "Pin #5:"
 msgstr ""
 
-#: TFORM1.LABEL11.CAPTION
+#: tform1.label11.caption
 msgid "Pin #3:"
 msgstr ""
 
-#: TFORM1.LABEL12.CAPTION
+#: tform1.label12.caption
 msgid "Pin #4:"
 msgstr ""
 
-#: TFORM1.LABEL14.CAPTION
+#: tform1.label14.caption
 msgid "Package &"
 msgstr ""
 
-#: TFORM1.LABEL15.CAPTION
+#: tform1.label15.caption
 msgid "Pin #6:"
 msgstr ""
 
-#: TFORM1.LABEL17.CAPTION
+#: tform1.label17.caption
 msgid "Pin #7:"
 msgstr ""
 
-#: TFORM1.LABEL18.CAPTION
+#: tform1.label18.caption
 msgid "Warning!"
 msgstr ""
 
-#: TFORM1.LABEL19.CAPTION
+#: tform1.label19.caption
 msgid "This measurement can destroy the transistor!"
 msgstr ""
 
-#: TFORM1.LABEL2.CAPTION
+#: tform1.label2.caption
 msgid "Pin #1:"
 msgstr ""
 
-#: TFORM1.LABEL20.CAPTION
-msgctxt "TFORM1.LABEL20.CAPTION"
+#: tform1.label20.caption
+msgctxt "tform1.label20.caption"
 msgid "V"
 msgstr ""
 
-#: TFORM1.LABEL21.CAPTION
+#: tform1.label21.caption
 msgctxt "TFORM1.LABEL21.CAPTION"
 msgid "V"
 msgstr ""
 
-#: TFORM1.LABEL22.CAPTION
-msgctxt "TFORM1.LABEL22.CAPTION"
+#: tform1.label22.caption
+msgctxt "tform1.label22.caption"
 msgid "uA"
 msgstr ""
 
-#: TFORM1.LABEL23.CAPTION
+#: tform1.label23.caption
 msgctxt "TFORM1.LABEL23.CAPTION"
 msgid "uA"
 msgstr ""
 
-#: TFORM1.LABEL24.CAPTION
+#: tform1.label24.caption
 msgctxt "TFORM1.LABEL24.CAPTION"
 msgid "uA"
 msgstr ""
 
-#: TFORM1.LABEL25.CAPTION
+#: tform1.label25.caption
 msgid "Breakdown voltage"
 msgstr ""
 
-#: TFORM1.LABEL26.CAPTION
+#: tform1.label26.caption
 msgid "Reverse current"
 msgstr ""
 
-#: TFORM1.LABEL27.CAPTION
+#: tform1.label27.caption
 msgid "%"
 msgstr ""
 
-#: TFORM1.LABEL28.CAPTION
+#: tform1.label28.caption
 msgid "Tolerance:"
 msgstr ""
 
-#: TFORM1.LABEL29.CAPTION
+#: tform1.label29.caption
 msgid "Measure voltage: 100V"
 msgstr ""
 
-#: TFORM1.LABEL3.CAPTION
+#: tform1.label3.caption
 msgid "Ucem [V]:"
 msgstr ""
 
-#: TFORM1.LABEL30.CAPTION
+#: tform1.label30.caption
 msgid "Measure voltage: 6V"
 msgstr ""
 
-#: TFORM1.LABEL4.CAPTION
+#: tform1.label4.caption
 msgid "Ucbm [V]:"
 msgstr ""
 
-#: TFORM1.LABEL5.CAPTION
+#: tform1.label5.caption
 msgid "Icm [A]:"
 msgstr ""
 
-#: TFORM1.LABEL6.CAPTION
+#: tform1.label6.caption
 msgid "Ibm [mA]:"
 msgstr ""
 
-#: TFORM1.LABEL7.CAPTION
+#: tform1.label7.caption
 msgid "Pd [W]:"
 msgstr ""
 
-#: TFORM1.LABEL8.CAPTION
+#: tform1.label8.caption
 msgid "Polarity"
 msgstr ""
 
-#: TFORM1.LABEL9.CAPTION
+#: tform1.label9.caption
 msgid "Pin #2:"
 msgstr ""
 
-#: TFORM1.MENUITEM1.CAPTION
+#: tform1.menuitem1.caption
 msgid "&File"
 msgstr ""
 
-#: TFORM1.MENUITEM10.CAPTION
+#: tform1.menuitem10.caption
 msgctxt "TFORM1.MENUITEM10.CAPTION"
-msgid "&Software help"
+msgid "&Help"
 msgstr ""
 
-#: TFORM1.MENUITEM11.CAPTION
-msgctxt "TFORM1.MENUITEM11.CAPTION"
-msgid "H&ardware help"
+#: tform1.menuitem14.caption
+msgid "See home&page"
 msgstr ""
 
-#: TFORM1.MENUITEM12.CAPTION
-msgctxt "TFORM1.MENUITEM12.CAPTION"
-msgid "-"
-msgstr ""
-
-#: TFORM1.MENUITEM13.CAPTION
-msgctxt "TFORM1.MENUITEM13.CAPTION"
-msgid "-"
-msgstr ""
-
-#: TFORM1.MENUITEM14.CAPTION
-msgid "See &homepage"
-msgstr ""
-
-#: TFORM1.MENUITEM15.CAPTION
+#: tform1.menuitem15.caption
 msgctxt "TFORM1.MENUITEM15.CAPTION"
 msgid "-"
 msgstr ""
 
-#: TFORM1.MENUITEM16.CAPTION
+#: tform1.menuitem16.caption
 msgctxt "TFORM1.MENUITEM16.CAPTION"
 msgid "&Save profile"
 msgstr ""
 
-#: TFORM1.MENUITEM17.CAPTION
+#: tform1.menuitem17.caption
 msgid "&Open profile"
 msgstr ""
 
-#: TFORM1.MENUITEM18.CAPTION
+#: tform1.menuitem18.caption
 msgctxt "TFORM1.MENUITEM18.CAPTION"
 msgid "&New profile"
 msgstr ""
 
-#: TFORM1.MENUITEM19.CAPTION
-msgctxt "TFORM1.MENUITEM19.CAPTION"
+#: tform1.menuitem19.caption
+msgctxt "tform1.menuitem19.caption"
 msgid "-"
 msgstr ""
 
-#: TFORM1.MENUITEM2.CAPTION
+#: tform1.menuitem2.caption
 msgid "&Operation"
 msgstr ""
 
-#: TFORM1.MENUITEM20.CAPTION
+#: tform1.menuitem20.caption
 msgid "Search &update"
 msgstr ""
 
-#: TFORM1.MENUITEM21.CAPTION
+#: tform1.menuitem21.caption
 msgctxt "TFORM1.MENUITEM21.CAPTION"
 msgid "&Original profiles"
 msgstr ""
 
-#: TFORM1.MENUITEM22.CAPTION
+#: tform1.menuitem22.caption
 msgid "&Parameters"
 msgstr ""
 
-#: TFORM1.MENUITEM23.CAPTION
+#: tform1.menuitem23.caption
 msgid "&Base characteristic"
 msgstr ""
 
-#: TFORM1.MENUITEM24.CAPTION
+#: tform1.menuitem24.caption
 msgid "&Pair select"
 msgstr ""
 
-#: TFORM1.MENUITEM25.CAPTION
+#: tform1.menuitem25.caption
 msgctxt "TFORM1.MENUITEM25.CAPTION"
 msgid "-"
 msgstr ""
 
-#: TFORM1.MENUITEM26.CAPTION
+#: tform1.menuitem26.caption
 msgid "&Preferences..."
 msgstr ""
 
-#: TFORM1.MENUITEM27.CAPTION
+#: tform1.menuitem27.caption
 msgctxt "TFORM1.MENUITEM27.CAPTION"
 msgid "&My profiles"
 msgstr ""
 
-#: TFORM1.MENUITEM28.CAPTION
+#: tform1.menuitem28.caption
 msgid "Save profile &as..."
 msgstr ""
 
-#: TFORM1.MENUITEM29.CAPTION
+#: tform1.menuitem29.caption
 msgid "Save &result"
 msgstr ""
 
-#: TFORM1.MENUITEM3.CAPTION
+#: tform1.menuitem3.caption
+msgctxt "tform1.menuitem3.caption"
 msgid "&Help"
 msgstr ""
 
-#: TFORM1.MENUITEM30.CAPTION
+#: tform1.menuitem30.caption
 msgctxt "TFORM1.MENUITEM30.CAPTION"
 msgid "as &picture (BMP)"
 msgstr ""
 
-#: TFORM1.MENUITEM31.CAPTION
+#: tform1.menuitem31.caption
 msgctxt "TFORM1.MENUITEM31.CAPTION"
 msgid "as data (TXT)"
 msgstr ""
 
-#: TFORM1.MENUITEM37.CAPTION
+#: tform1.menuitem37.caption
 msgid "&View"
 msgstr ""
 
-#: TFORM1.MENUITEM38.CAPTION
+#: tform1.menuitem38.caption
 msgctxt "TFORM1.MENUITEM38.CAPTION"
 msgid "Toggle &grid"
 msgstr ""
 
-#: TFORM1.MENUITEM39.CAPTION
+#: tform1.menuitem39.caption
 msgctxt "TFORM1.MENUITEM39.CAPTION"
 msgid "Toggle &header"
 msgstr ""
 
-#: TFORM1.MENUITEM4.CAPTION
+#: tform1.menuitem4.caption
 msgid "&Quit"
 msgstr ""
 
-#: TFORM1.MENUITEM40.CAPTION
+#: tform1.menuitem40.caption
 msgid "&Collector characteristic"
 msgstr ""
 
-#: TFORM1.MENUITEM42.CAPTION
+#: tform1.menuitem42.caption
 msgctxt "TFORM1.MENUITEM42.CAPTION"
 msgid "-"
 msgstr ""
 
-#: TFORM1.MENUITEM43.CAPTION
+#: tform1.menuitem43.caption
 msgid "Re&fresh displays"
 msgstr ""
 
-#: TFORM1.MENUITEM44.CAPTION
+#: tform1.menuitem44.caption
 msgid "&Clear all display"
 msgstr ""
 
-#: TFORM1.MENUITEM5.CAPTION
-msgid "Set &serial number..."
-msgstr ""
-
-#: TFORM1.MENUITEM6.CAPTION
-msgid "On-line &registration"
-msgstr ""
-
-#: TFORM1.MENUITEM7.CAPTION
-msgid "On-line &bugreport"
-msgstr ""
-
-#: TFORM1.MENUITEM8.CAPTION
+#: tform1.menuitem8.caption
 msgctxt "TFORM1.MENUITEM8.CAPTION"
 msgid "-"
 msgstr ""
 
-#: TFORM1.MENUITEM9.CAPTION
+#: tform1.menuitem9.caption
 msgid "&About..."
 msgstr ""
 
-#: TFORM1.PANEL1.CAPTION
-msgctxt "TFORM1.PANEL1.CAPTION"
+#: tform1.panel1.caption
+msgctxt "tform1.panel1.caption"
 msgid "0 "
 msgstr ""
 
-#: TFORM1.PANEL2.CAPTION
+#: tform1.panel2.caption
 msgctxt "TFORM1.PANEL2.CAPTION"
 msgid "0 "
 msgstr ""
 
-#: TFORM1.PANEL3.CAPTION
+#: tform1.panel3.caption
 msgctxt "TFORM1.PANEL3.CAPTION"
 msgid "0 "
 msgstr ""
 
-#: TFORM1.PANEL4.CAPTION
+#: tform1.panel4.caption
 msgctxt "TFORM1.PANEL4.CAPTION"
 msgid "0 "
 msgstr ""
 
-#: TFORM1.PANEL5.CAPTION
+#: tform1.panel5.caption
 msgctxt "TFORM1.PANEL5.CAPTION"
 msgid "0 "
 msgstr ""
 
-#: TFORM1.TABSHEET1.CAPTION
+#: tform1.statusbar1.panels[0].text
+msgid "DEMO"
+msgstr ""
+
+#: tform1.tabsheet1.caption
 msgid "Parameters"
 msgstr ""
 
-#: TFORM1.TABSHEET2.CAPTION
+#: tform1.tabsheet2.caption
 msgid "Base characteristic"
 msgstr ""
 
-#: TFORM1.TABSHEET3.CAPTION
+#: tform1.tabsheet3.caption
 msgid "Pair select"
 msgstr ""
 
-#: TFORM1.TABSHEET4.CAPTION
+#: tform1.tabsheet4.caption
 msgid "Collector characteristic"
 msgstr ""
 
-#: TFORM1.TOOLBAR1.CAPTION
+#: tform1.toolbar1.caption
 msgid "ToolBar1"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON1.CAPTION
-msgctxt "TFORM1.TOOLBUTTON1.CAPTION"
+#: tform1.toolbutton1.caption
+msgctxt "tform1.toolbutton1.caption"
 msgid "&New profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON1.HINT
+#: tform1.toolbutton1.hint
 msgid "Create new profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON10.CAPTION
-msgctxt "TFORM1.TOOLBUTTON10.CAPTION"
+#: tform1.toolbutton10.caption
+msgctxt "tform1.toolbutton10.caption"
 msgid "Toggle &grid"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON10.HINT
+#: tform1.toolbutton10.hint
 msgid "Toggle grid"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON11.CAPTION
-msgctxt "TFORM1.TOOLBUTTON11.CAPTION"
-msgid "&Software help"
-msgstr ""
-
-#: TFORM1.TOOLBUTTON11.HINT
-msgid "Software help"
-msgstr ""
-
-#: TFORM1.TOOLBUTTON12.CAPTION
+#: tform1.toolbutton12.caption
 msgid "ToolButton12"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON13.CAPTION
-msgctxt "TFORM1.TOOLBUTTON13.CAPTION"
-msgid "H&ardware help"
-msgstr ""
-
-#: TFORM1.TOOLBUTTON13.HINT
-msgid "Hardware help"
-msgstr ""
-
-#: TFORM1.TOOLBUTTON14.CAPTION
+#: tform1.toolbutton14.caption
 msgid "Re&fresh"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON14.HINT
+#: tform1.toolbutton14.hint
 msgid "Refresh displays"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON2.CAPTION
-msgctxt "TFORM1.TOOLBUTTON2.CAPTION"
+#: tform1.toolbutton2.caption
+msgctxt "tform1.toolbutton2.caption"
 msgid "&Original profiles"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON2.HINT
-msgctxt "TFORM1.TOOLBUTTON2.HINT"
+#: tform1.toolbutton2.hint
+msgctxt "tform1.toolbutton2.hint"
 msgid "Open original profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON3.CAPTION
-msgctxt "TFORM1.TOOLBUTTON3.CAPTION"
+#: tform1.toolbutton3.caption
+msgctxt "tform1.toolbutton3.caption"
 msgid "&My profiles"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON3.HINT
+#: tform1.toolbutton3.hint
 msgid "Open my profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON4.CAPTION
-msgctxt "TFORM1.TOOLBUTTON4.CAPTION"
+#: tform1.toolbutton4.caption
+msgctxt "tform1.toolbutton4.caption"
 msgid "&Save profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON4.HINT
+#: tform1.toolbutton4.hint
 msgid "Save profile"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON5.CAPTION
-msgctxt "TFORM1.TOOLBUTTON5.CAPTION"
+#: tform1.toolbutton5.caption
+msgctxt "tform1.toolbutton5.caption"
 msgid "as &picture (BMP)"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON5.HINT
-msgctxt "TFORM1.TOOLBUTTON5.HINT"
+#: tform1.toolbutton5.hint
+msgctxt "tform1.toolbutton5.hint"
 msgid "Save result in BMP format"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON6.CAPTION
-msgctxt "TFORM1.TOOLBUTTON6.CAPTION"
+#: tform1.toolbutton6.caption
+msgctxt "tform1.toolbutton6.caption"
 msgid "as data (TXT)"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON6.HINT
-msgctxt "TFORM1.TOOLBUTTON6.HINT"
+#: tform1.toolbutton6.hint
+msgctxt "tform1.toolbutton6.hint"
 msgid "Save result in TXT format"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON7.CAPTION
+#: tform1.toolbutton7.caption
 msgid "ToolButton7"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON8.CAPTION
+#: tform1.toolbutton8.caption
 msgid "ToolButton8"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON9.CAPTION
-msgctxt "TFORM1.TOOLBUTTON9.CAPTION"
+#: tform1.toolbutton9.caption
+msgctxt "tform1.toolbutton9.caption"
 msgid "Toggle &header"
 msgstr ""
 
-#: TFORM1.TOOLBUTTON9.HINT
+#: tform1.toolbutton9.hint
 msgid "Toggle header"
 msgstr ""
 
-#: TFORM2.BUTTON1.CAPTION
+#: tform2.button1.caption
 msgid "Close"
 msgstr ""
 
-#: TFORM2.CAPTION
+#: tform2.caption
 msgid "About"
 msgstr ""
 
-#: TFORM2.LABEL1.CAPTION
-msgid "CTT v0.1"
+#: tform2.label1.caption
+msgid "CTT-demo v0.1"
 msgstr ""
 
-#: TFORM2.LABEL11.CAPTION
-msgid "Copyright (C) 2010 Pozsár Zsolt"
+#: tform2.label11.caption
+msgid "Copyright (C) 2010-2022 Pozsár Zsolt"
 msgstr ""
 
-#: TFORM2.LABEL2.CAPTION
-msgid "Computer controlled Transistor Tester"
+#: tform2.label2.caption
+msgid "Transistor tester and characteristic curve plotter"
 msgstr ""
 
-#: TFORM2.LABEL3.CAPTION
+#: tform2.label3.caption
 msgid "Homepage:"
 msgstr ""
 
-#: TFORM2.LABEL5.CAPTION
-msgid "info@pozsarzs.hu"
+#: tform2.label4.caption
+msgid "http://www.pozsarzs.hu"
 msgstr ""
 
-#: TFORM2.LABEL6.CAPTION
-msgid "E-mail:"
+#: tform2.label5.caption
+msgid "pozsarzs@gmail.com"
 msgstr ""
 
-#: TFORM2.LABEL7.CAPTION
-msgid "Name:"
-msgstr ""
-
-#: TFORM2.LABEL9.CAPTION
-msgid "Serial:"
-msgstr ""
-
-#: TFORM3.BUTTON1.CAPTION
-msgctxt "TFORM3.BUTTON1.CAPTION"
+#: tform4.button1.caption
 msgid "&Set"
 msgstr ""
 
-#: TFORM3.BUTTON3.CAPTION
-msgctxt "TFORM3.BUTTON3.CAPTION"
+#: tform4.button2.caption
 msgid "&Cancel"
 msgstr ""
 
-#: TFORM3.BUTTON4.CAPTION
-msgid "Button4"
-msgstr ""
-
-#: TFORM3.CAPTION
-msgid "Set serial"
-msgstr ""
-
-#: TFORM3.LABEL1.CAPTION
-msgid "Your serial number:"
-msgstr ""
-
-#: TFORM3.STATICTEXT1.CAPTION
-msgctxt "TFORM3.STATICTEXT1.CAPTION"
-msgid "-"
-msgstr ""
-
-#: TFORM3.STATICTEXT2.CAPTION
-msgctxt "TFORM3.STATICTEXT2.CAPTION"
-msgid "-"
-msgstr ""
-
-#: TFORM4.BUTTON1.CAPTION
-msgctxt "TFORM4.BUTTON1.CAPTION"
-msgid "&Set"
-msgstr ""
-
-#: TFORM4.BUTTON2.CAPTION
-msgctxt "TFORM4.BUTTON2.CAPTION"
-msgid "&Cancel"
-msgstr ""
-
-#: TFORM4.BUTTON4.CAPTION
-msgctxt "TFORM4.BUTTON4.CAPTION"
+#: tform4.button4.caption
+msgctxt "tform4.button4.caption"
 msgid "..."
 msgstr ""
 
-#: TFORM4.BUTTON5.CAPTION
+#: tform4.button5.caption
 msgctxt "TFORM4.BUTTON5.CAPTION"
 msgid "..."
 msgstr ""
 
-#: TFORM4.CAPTION
+#: tform4.caption
 msgid "Preferences"
 msgstr ""
 
-#: TFORM4.CHECKBOX1.CAPTION
+#: tform4.checkbox1.caption
 msgid "Offline mode"
 msgstr ""
 
-#: TFORM4.COMBOBOX1.TEXT
+#: tform4.combobox1.text
 msgid "378H"
 msgstr ""
 
-#: TFORM4.LABEL1.CAPTION
+#: tform4.label1.caption
 msgid "Browser application:"
 msgstr ""
 
-#: TFORM4.LABEL2.CAPTION
+#: tform4.label2.caption
 msgid "Mailer application:"
 msgstr ""
 
-#: TFORM4.LABEL3.CAPTION
+#: tform4.label3.caption
 msgid "Port:"
 msgstr ""
 
-#: TFORM4.RADIOGROUP1.CAPTION
+#: tform4.radiogroup1.caption
 msgid "Display color"
 msgstr ""
 

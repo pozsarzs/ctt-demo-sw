@@ -55,9 +55,7 @@ const
   packages: array[0..4] of string = ('emitter', 'base', 'collector', 'package', 'none');
 
 {$I demodata.pp}
-
-  VERSION = '0.1';
-  HOMEPAGE = 'http://www.pozsarzs.hu';
+{$I config.pp}
 
 function getexepath: string;
 function getlang: string;
@@ -93,24 +91,9 @@ end;
 
 // get language
 function getlang: string;
-{$IFDEF WIN32}
-var
-  Buffer: PChar;
-  Size: integer;
-{$ENDIF}
 begin
   {$IFDEF LINUX}
   s := getenv('LANG');
-  {$ENDIF}
-  {$IFDEF WIN32}
-  Size := GetLocaleInfo(LOCALE_USER_DEFAULT, LOCALE_SABBREVLANGNAME, nil, 0);
-  GetMem(Buffer, Size);
-  try
-    GetLocaleInfo(LOCALE_USER_DEFAULT, LOCALE_SABBREVLANGNAME, Buffer, Size);
-    s := string(Buffer);
-  finally
-    FreeMem(Buffer);
-  end;
   {$ENDIF}
   if length(s) = 0 then
     s := 'en';
@@ -548,12 +531,6 @@ begin
   if FSearch('cttrc', userdir) <> '' then
     conffile := 2;
   {$ENDIF}
-  {$IFDEF WIN32}
-  if FSearch('ctt.cfg', exepath) <> '' then
-    conffile := 3;
-  if FSearch('cttrc', userdir) <> '' then
-    conffile := 4;
-  {$ENDIF}
   case conffile of
     1: assignfile(t, exepath + 'ctt.conf');
     2: assignfile(t, userdir + 'cttrc');
@@ -600,38 +577,13 @@ end;
 
 // make user's directory
 procedure makeuserdir;
-{$IFDEF WIN32}
-  function GetUserProfile: string;
-  var
-    Buffer: array[0..MAX_PATH] of char;
-  begin
-    FillChar(Buffer, SizeOf(Buffer), 0);
-    SHGetFolderPath(0, CSIDL_PROFILE, 0, SHGFP_TYPE_CURRENT, Buffer);
-    Result := string(PChar(@Buffer));
-  end;
-
-{$ENDIF}
-
 begin
   {$IFDEF LINUX}
   userdir := getenvironmentvariable('HOME');
   userdir := userdir + '/.ctt/';
   {$I-}
   mkdir(userdir);
-{$I+}
-  ioresult;
-  {$ENDIF}
-  {$IFDEF WIN32}
-  userdir := getuserprofile;
-  userdir := userdir + '\Application data\';
-  {$I-}
-  mkdir(userdir);
-{$I+}
-  ioresult;
-  userdir := userdir + 'ctt\';
-  {$I-}
-  mkdir(userdir);
-{$I+}
+  {$I+}
   ioresult;
   {$ENDIF}
 end;
@@ -663,9 +615,6 @@ procedure savecfg;
 begin
   {$IFDEF LINUX}
   assignfile(t, userdir + '/cttrc');
-  {$ENDIF}
-  {$IFDEF WIN32}
-  assignfile(t, userdir + 'cttrc');
   {$ENDIF}
   {$I-}
   rewrite(t);
@@ -708,9 +657,6 @@ begin
   dark2 := '';
   {$IFDEF LINUX}
   assignfile(t, exepath + 'palettes/' + displaycolor + '.pal');
-  {$ENDIF}
-  {$IFDEF WIN32}
-  assignfile(t, exepath + 'palettes\' + displaycolor + '.pal');
   {$ENDIF}
   {$I-}
   reset(t);

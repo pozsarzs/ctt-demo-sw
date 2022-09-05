@@ -1,0 +1,43 @@
+CTT-demo - transistor tester and characteristic curve plotter
+-------------------------------------------------------------
+
+1. About software
+~~~~~~~~~~~~~~~~~
+  The CTT is a computer-controlled tester and plotter for bipolar
+ transistors. The device is connected to the machine via the parallel
+ port.
+
+Note:
+  This application is a demo version of the CTT. You can view
+  and test the application, but you can't measure.
+
+2. How to get installer package for my OS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a. Visit homepage (see later) to download installer packages:
+
+  architecture  operation system        filename
+  --------------------------------------------------------------------
+  (all)         (source code)           ctt-demo-0.1.tar.gz
+  amd64         Linux                   ctt-demo-0.1-amd64.bin
+  amd64         Linux                   ctt-demo-0.1-amd64.tar.gz
+  i586          Linux                   ctt-demo-0.1-i586.bin
+  i586          Linux                   ctt-demo-0.1-i586.tar.gz
+
+b. Download source code from Github
+
+  $ git clone https://github.com/pozsarzs/ctt-demo-sw.git
+
+3. Contact
+~~~~~~~~~~
+
+   Homepage:             <http://www.pozsarzs.hu/>
+   Author:               Pozsár Zsolt
+   E-mail:               <pozsarzs@gmail.com>
+   Phone:                +36 56/470-272
+   Mobile:               +36 30/249-5030
+   Postal address:       Kurazsi Fo ut 1.
+                         HU-5430 Tiszafoldvar
+                         Hungary
+
+---------------------------------------------------------------------------------
+ CTT-demo * Copyright (C) 2010-2022 Pozsár Zsolt <pozsarzs@gmail.com>

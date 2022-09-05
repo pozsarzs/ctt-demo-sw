@@ -13,8 +13,9 @@
 // FOR A PARTICULAR PURPOSE.
 
 const
-  APPNAME='MM8DRead';
-  VERSION='0.3';
+  HOMEPAGE = 'http://www.pozsarzs.hu';
+  APPNAME='CTT-demo';
+  VERSION='0.1';
   // install path
   INSTPATH='@prefix@/';
   {$IFDEF UseFHS}
@@ -32,11 +33,11 @@ const
   {$ENDIF}
   // user's folders
   {$IFDEF UNIX}
-    DIR_CONFIG='/.config/mm8dread/';
+    DIR_CONFIG='/.config/ctt/';
   {$ENDIF}
   {$IFDEF ANDROID}
     DIR_CONFIG='/config/';
   {$ENDIF}
   {$IFDEF WIN32}
-    DIR_CONFIG='\AppData\Local\mm8dread\';
+    DIR_CONFIG='\AppData\Local\ctt\';
   {$ENDIF}

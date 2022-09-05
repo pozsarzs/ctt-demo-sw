@@ -28,7 +28,7 @@ uses
 begin
   if (ParamStr(1) = '-v') or (ParamStr(1) = '--version') then
   begin
-    writeln('v0.1');
+    writeln(APPNAME + ' v'+ VERSION);
     halt(0);
   end;
   Application.Title:='CTT-demo * Transistor tester and characteristic curve '

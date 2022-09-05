@@ -1,14 +1,14 @@
 object Form2: TForm2
-  Left = 350
-  Height = 147
-  Top = 244
-  Width = 439
+  Left = 422
+  Height = 149
+  Top = 305
+  Width = 409
   ActiveControl = Button1
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = 'About'
-  ClientHeight = 147
-  ClientWidth = 439
+  ClientHeight = 149
+  ClientWidth = 409
   Icon.Data = {
     5E07000000000100010018180000010018004807000016000000280000001800
     0000300000000100180000000000C0060000120B0000120B0000000000000000
@@ -75,11 +75,14 @@ object Form2: TForm2
   Position = poMainFormCenter
   LCLVersion = '1.6.2.0'
   object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
     Left = 8
     Height = 19
     Top = 8
-    Width = 78
-    Caption = 'CTT v0.1'
+    Width = 133
+    BorderSpacing.Around = 8
+    Caption = 'CTT-demo v0.1'
     Font.Height = -16
     Font.Name = 'Sans'
     Font.Style = [fsBold]
@@ -87,26 +90,42 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label2: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 15
-    Top = 32
-    Width = 238
-    Caption = 'Computer controlled Transistor Tester'
+    Top = 35
+    Width = 358
+    BorderSpacing.Left = 8
+    Caption = 'Transistor tester and characteristic curve plotter'
+    Font.Style = [fsBold]
     ParentColor = False
+    ParentFont = False
   end
   object Label3: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label11
+    AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 15
-    Top = 128
+    Top = 81
     Width = 75
+    BorderSpacing.Around = 8
     Caption = 'Homepage:'
     ParentColor = False
   end
   object Label4: TLabel
-    Left = 88
-    Height = 1
-    Top = 128
-    Width = 1
+    AnchorSideLeft.Control = Label3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label3
+    AnchorSideTop.Side = asrCenter
+    Left = 91
+    Height = 15
+    Top = 81
+    Width = 151
+    BorderSpacing.Around = 8
+    Caption = 'http://www.pozsarzs.hu'
     Font.Color = clBlue
     ParentColor = False
     ParentFont = False
@@ -114,55 +133,11 @@ object Form2: TForm2
     OnMouseEnter = Label4MouseEnter
     OnMouseLeave = Label4MouseLeave
   end
-  object Label5: TLabel
-    Left = 88
-    Height = 15
-    Top = 144
-    Width = 113
-    Caption = 'info@pozsarzs.hu'
-    Font.Color = clBlue
-    ParentColor = False
-    ParentFont = False
-    OnClick = Label5Click
-    OnMouseEnter = Label5MouseEnter
-    OnMouseLeave = Label5MouseLeave
-  end
-  object Label6: TLabel
-    Left = 8
-    Height = 15
-    Top = 144
-    Width = 44
-    Caption = 'E-mail:'
-    ParentColor = False
-  end
-  object Bevel1: TBevel
-    Left = 8
-    Height = 48
-    Top = 72
-    Width = 424
-    Shape = bsFrame
-  end
-  object Label7: TLabel
-    Left = 16
-    Height = 15
-    Top = 80
-    Width = 43
-    Caption = 'Name:'
-    ParentColor = False
-  end
   object Label8: TLabel
     Left = 88
     Height = 1
     Top = 80
     Width = 1
-    ParentColor = False
-  end
-  object Label9: TLabel
-    Left = 16
-    Height = 15
-    Top = 96
-    Width = 40
-    Caption = 'Serial:'
     ParentColor = False
   end
   object Label10: TLabel
@@ -173,28 +148,64 @@ object Form2: TForm2
     ParentColor = False
   end
   object Bevel2: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Label4
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button1
     Left = 8
     Height = 1
-    Top = 168
-    Width = 424
+    Top = 107
+    Width = 393
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Around = 8
     Shape = bsTopLine
   end
   object Label11: TLabel
+    AnchorSideTop.Control = Label2
+    AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 15
-    Top = 48
-    Width = 204
-    Caption = 'Copyright (C) 2010 Pozsár Zsolt'
+    Top = 58
+    Width = 243
+    BorderSpacing.Around = 8
+    Caption = 'Copyright (C) 2010-2022 Pozsár Zsolt'
     ParentColor = False
   end
   object Button1: TButton
-    Left = 357
+    AnchorSideTop.Control = Bevel2
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 326
     Height = 25
-    Top = 176
+    Top = 116
     Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 8
     Cancel = True
     Caption = 'Close'
     OnClick = Button1Click
     TabOrder = 0
+  end
+  object Label5: TLabel
+    AnchorSideLeft.Control = Label11
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label11
+    AnchorSideTop.Side = asrCenter
+    Left = 259
+    Height = 15
+    Top = 58
+    Width = 139
+    BorderSpacing.Around = 8
+    Caption = 'pozsarzs@gmail.com'
+    Font.Color = clBlue
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label5Click
+    OnMouseEnter = Label5MouseEnter
+    OnMouseLeave = Label5MouseLeave
   end
 end
