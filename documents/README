@@ -18,9 +18,6 @@ a. Visit homepage (see later) to download installer packages:
   architecture  operation system        filename
   --------------------------------------------------------------------
   (all)         (source code)           ctt-demo-0.1.tar.gz
-  amd64         Linux                   ctt-demo-0.1-amd64.bin
-  amd64         Linux                   ctt-demo-0.1-amd64.tar.gz
-  i586          Linux                   ctt-demo-0.1-i586.bin
   i586          Linux                   ctt-demo-0.1-i586.tar.gz
 
 b. Download source code from Github
