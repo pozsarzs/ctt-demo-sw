@@ -357,7 +357,7 @@ begin
     txt := TStringList.Create;
     with THTTPSend.Create do
     begin
-      if HttpGetText(HOMEPAGE + '/ctt/update/prog_version.txt', txt) then
+      if HttpGetText(HOMEPAGE + '/upgrade/ctt-demo/prog_version.txt', txt) then
         try
           newversion := txt.Strings[0];
           if VERSION <> newversion then
