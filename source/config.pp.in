@@ -1,5 +1,5 @@
 { +--------------------------------------------------------------------------+ }
-{ | CTT v0.1 * transistor tester and characteristic curve plotter            | }
+{ | CTT-demo v0.1 * transistor tester and characteristic curve plotter       | }
 { | Copyright (C) 2010-2022 Pozsar Zsolt <pozsarzs@gmail.com>                | }
 { | config.pas(.in)                                                          | }
 { | Setting for source code                                                  | }
@@ -15,7 +15,7 @@
 const
   HOMEPAGE = 'http://www.pozsarzs.hu';
   APPNAME='CTT-demo';
-  VERSION='0.1';
+  VERSION='@version@';
   // install path
   INSTPATH='@prefix@/';
   {$IFDEF UseFHS}
