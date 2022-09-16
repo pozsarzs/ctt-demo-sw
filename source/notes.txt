@@ -1,0 +1,16 @@
+Operation modes of demo application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ M.  Operation       Result  Puffer
+---------------------------------------------------------------------
+ M0  Stand-by        -
+ M1  BUce            BUce      mdata[1]
+ M2  BUcb            BUcb      mdata[2]
+ M3  Ieb0            Ieb0      mdata[3]
+ M4  Icb0            Icb0      mdata[4]
+ M5  Ice0            Ice0      mdata[5]
+ M6  Input diagram   (Ube;Ib)  mdata[7..46]
+ M7  Output diagram  (Uce;Ic)  mdata[47..206]
+ M8  Selection h21e  h21e      mdata[6]
+
+ Result is random data.

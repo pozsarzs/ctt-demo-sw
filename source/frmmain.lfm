@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 208
+  Left = 276
   Height = 679
-  Top = 28
+  Top = 29
   Width = 733
   ActiveControl = Edit2
   BorderIcons = [biSystemMenu, biMinimize]
@@ -72,17 +72,22 @@ object Form1: TForm1
     Left = 8
     Height = 15
     Top = 205
-    Width = 50
-    Caption = 'Polarity'
+    Width = 53
+    Caption = 'Polarity:'
     ParentColor = False
   end
   object Label14: TLabel
+    AnchorSideRight.Control = Bevel3
+    AnchorSideBottom.Control = ComboBox3
     Left = 8
-    Height = 30
+    Height = 141
     Top = 256
-    Width = 58
-    Caption = 'Package &'#10'pin-out:'
+    Width = 62
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Right = 4
+    Caption = 'Package and pin-out'
     ParentColor = False
+    WordWrap = True
   end
   object Image1: TImage
     Left = 75
@@ -266,10 +271,10 @@ object Form1: TForm1
     Height = 605
     Top = 24
     Width = 541
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Around = 8
-    TabIndex = 0
+    TabIndex = 3
     TabOrder = 17
     object TabSheet1: TTabSheet
       Caption = 'Parameters'

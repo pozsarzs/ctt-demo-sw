@@ -372,8 +372,8 @@ msgid "Pin #4:"
 msgstr "4. láb:"
 
 #: tform1.label14.caption
-msgid "Package &"
-msgstr "Tokozás és"
+msgid "Package and pin-out"
+msgstr "Tokozás és lábkiosztás"
 
 #: tform1.label15.caption
 msgid "Pin #6:"
@@ -465,8 +465,8 @@ msgid "Pd [W]:"
 msgstr "Pd [W]:"
 
 #: tform1.label8.caption
-msgid "Polarity"
-msgstr "Polaritás"
+msgid "Polarity:"
+msgstr "Polaritás:"
 
 #: tform1.label9.caption
 msgid "Pin #2:"

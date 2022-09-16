@@ -28,11 +28,11 @@ uses
 begin
   if (ParamStr(1) = '-v') or (ParamStr(1) = '--version') then
   begin
-    writeln(APPNAME + ' v'+ VERSION);
+    writeln(APPNAME + ' v' + VERSION);
     halt(0);
   end;
-  Application.Title:='CTT-demo * Transistor tester and characteristic curve '
-    +'plotter';
+  Application.Title := 'CTT-demo * Transistor tester and characteristic curve '
+    + 'plotter';
   {$I ctt.lrs}
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);

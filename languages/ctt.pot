@@ -361,7 +361,7 @@ msgid "Pin #4:"
 msgstr ""
 
 #: tform1.label14.caption
-msgid "Package &"
+msgid "Package and pin-out"
 msgstr ""
 
 #: tform1.label15.caption
@@ -454,7 +454,7 @@ msgid "Pd [W]:"
 msgstr ""
 
 #: tform1.label8.caption
-msgid "Polarity"
+msgid "Polarity:"
 msgstr ""
 
 #: tform1.label9.caption

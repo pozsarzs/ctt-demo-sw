@@ -280,7 +280,7 @@ implementation
 { TForm1 }
 
 // -- Events -------------------------------------------------------------------
-// on create event
+// OnCreate event
 procedure TForm1.FormCreate(Sender: TObject);
 var
   searchresult: searchrec;
@@ -296,12 +296,12 @@ begin
   for b := 1 to 206 do
     mdata[b] := '0';
   // default
-  commonproc.g1xdiv := 100;       // x: 100mV/div
-  commonproc.g1ydiv := 50;        // y: 50uA/div
+  commonproc.g1xdiv := 100;                                      // x: 100mV/div
+  commonproc.g1ydiv := 50;                                       // y:  50uA/div
   commonproc.g1xpix := commonproc.g1xdiv / 25;
   commonproc.g1ypix := commonproc.g1ydiv / 25;
-  commonproc.g2xdiv := 1000;      // x: 1000mV/div
-  commonproc.g2ydiv := 100;       // y: 100mA/div
+  commonproc.g2xdiv := 1000;                                    // x: 1000mV/div
+  commonproc.g2ydiv := 100;                                     // y:  100mA/div
   commonproc.g2xpix := commonproc.g2xdiv / 25;
   commonproc.g2ypix := commonproc.g2ydiv / 25;
   setdisplaycolors;
@@ -323,9 +323,7 @@ begin
       StatusBar1.Panels.Items[3].Text := ' ' + MESSAGE05;
   changedprofile := False;
   profilename := '';
-  {$IFDEF LINUX}
   findfirst(exepath + 'packages/*.png', anyfile, searchresult);
-  {$ENDIF}
   b := 0;
   while doserror = 0 do
   begin
@@ -346,10 +344,8 @@ begin
   end;
   ComboBox2.Sorted := True;
   Combobox2.ItemIndex := 0;
-  {$IFDEF LINUX}
   Image1.Picture.LoadFromFile(exepath + 'packages/' + lowercase(
     ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
-  {$ENDIF}
   Combobox3.Items.Add(MESSAGE16);
   Combobox3.Items.Add(MESSAGE17);
   Combobox3.Items.Add(MESSAGE18);
@@ -399,7 +395,7 @@ begin
   ShowMessage(MESSAGE42 + ' ' + MESSAGE43);
 end;
 
-// on close query event;
+// OnClose query event
 procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: boolean);
 begin
   if changedprofile = True then
@@ -417,8 +413,8 @@ begin
           exit;
         profilefilename := SaveDialog1.FileName;
         i := length(profilefilename);
-        if profilefilename[i - 3] + profilefilename[i - 2] + profilefilename[i - 1] +
-        profilefilename[i] <> '.pro' then
+        if profilefilename[i - 3] + profilefilename[i - 2] +
+        profilefilename[i - 1] + profilefilename[i] <> '.pro' then
           profilefilename := profilefilename + '.pro';
         fsplit(profilefilename, tdir, tname, textn);
         if FSearch(tname + textn, tdir) <> '' then
@@ -436,7 +432,7 @@ begin
   canclose := True;
 end;
 
-// on change events
+// OnChange events
 procedure TForm1.Edit2Change(Sender: TObject);
 begin
   if changedprofile = False then
@@ -446,16 +442,14 @@ end;
 
 procedure TForm1.ComboBox2Change(Sender: TObject);
 begin
-  {$IFDEF LINUX}
   Image1.Picture.LoadFromFile(exepath + 'packages/' + lowercase(
     ComboBox2.Items.ValueFromIndex[ComboBox2.ItemIndex] + '.png'));
-  {$ENDIF}
   if changedprofile = False then
     Form1.Caption := Form1.Caption + ' *';
   changedprofile := True;
 end;
 
-// PageControl onshow event
+// PageControl OnShow event
 procedure TForm1.TabSheet1Show(Sender: TObject);
 begin
   if (PageControl1.ActivePageIndex = 1) or (PageControl1.ActivePageIndex = 2) then
@@ -474,7 +468,7 @@ end;
 
 // -- Operation modes ----------------------------------------------------------
 // -- M1 --
-// start measure
+// Start measure
 procedure TForm1.Button2Click(Sender: TObject);
 begin
   if measure(1) = False then
@@ -483,14 +477,14 @@ begin
     writetodisplay;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn1Click(Sender: TObject);
 begin
   cleardisplay(1);
 end;
 
 // -- M2 --
-// start measure
+// Start measure
 procedure TForm1.Button3Click(Sender: TObject);
 begin
   if measure(2) = False then
@@ -499,14 +493,14 @@ begin
     writetodisplay;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn2Click(Sender: TObject);
 begin
   cleardisplay(2);
 end;
 
 // -- M3 --
-// start measure
+// Start measure
 procedure TForm1.Button4Click(Sender: TObject);
 begin
   if measure(3) = False then
@@ -515,14 +509,14 @@ begin
     writetodisplay;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn3Click(Sender: TObject);
 begin
   cleardisplay(3);
 end;
 
 // -- M4 --
-// start measure
+// Start measure
 procedure TForm1.Button5Click(Sender: TObject);
 begin
   if measure(4) = False then
@@ -531,14 +525,14 @@ begin
     writetodisplay;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn4Click(Sender: TObject);
 begin
   cleardisplay(4);
 end;
 
 // -- M5 --
-// start measure
+// Start measure
 procedure TForm1.Button6Click(Sender: TObject);
 begin
   if measure(5) = False then
@@ -547,17 +541,16 @@ begin
     writetodisplay;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn5Click(Sender: TObject);
 begin
   cleardisplay(5);
 end;
 
 // -- M6 --
-// start measure
+// Start measure
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  // uce ellenőrzés
   if measure(6) = False then
     ShowMessage(MESSAGE27)
   else
@@ -571,7 +564,7 @@ begin
   Memo1.Lines.Add('');
 end;
 
-// input diagram cursor
+// Input diagram cursor
 procedure TForm1.Image2MouseMove(Sender: TObject; Shift: TShiftState; X, Y: integer);
 begin
   if (x >= 8) and (y >= 29) and (x <= 508) and (y <= 379) then
@@ -580,7 +573,7 @@ begin
     Image2.Cursor := crDefault;
 end;
 
-// input diagram marker position
+// Input diagram marker position
 procedure TForm1.Image2MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: integer);
 begin
@@ -595,7 +588,8 @@ begin
       if header = True then
       begin
         Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g1xpix) + ' mV');
-        Canvas.TextOut(200, 14, MESSAGE39 + floattostr((y - 379) * (-1) * g1ypix) + ' uA');
+        Canvas.TextOut(200, 14, MESSAGE39 + floattostr(
+          (y - 379) * (-1) * g1ypix) + ' uA');
       end;
     end
     else
@@ -609,7 +603,7 @@ begin
   end;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn6Click(Sender: TObject);
 begin
   cleardisplay(6);
@@ -619,7 +613,6 @@ end;
 // -- M7 --
 procedure TForm1.Button10Click(Sender: TObject);
 begin
-  //ib ellenőrzés
   if measure(7) = False then
     ShowMessage(MESSAGE27)
   else
@@ -627,16 +620,16 @@ begin
   Memo2.Lines.Add(MESSAGE41 + ' [' + Edit2.Text + ']');
   b := 47;
   repeat
-    Memo2.Lines.Add(' ' + mdata[b] + ' mV' + #9 + mdata[b + 1] + ' mA' + #9 +
-      '| ' + mdata[b + 40] + ' mV' + #9 + mdata[b + 41] + ' mA' + #9 +
-      '| ' + mdata[b + 80] + ' mV' + #9 + mdata[b + 81] + ' mA' + #9 +
-      '| ' + mdata[b + 120] + ' mV' + #9 + mdata[b + 121] + ' mA');
+    Memo2.Lines.Add(' ' + mdata[b] + ' mV' + #9 + mdata[b + 1] +
+      ' mA' + #9 + '| ' + mdata[b + 40] + ' mV' + #9 + mdata[b + 41] +
+      ' mA' + #9 + '| ' + mdata[b + 80] + ' mV' + #9 + mdata[b + 81] +
+      ' mA' + #9 + '| ' + mdata[b + 120] + ' mV' + #9 + mdata[b + 121] + ' mA');
     b := b + 2
   until b = 85;
   Memo2.Lines.Add('');
 end;
 
-// output diagram cursor
+// Output diagram cursor
 procedure TForm1.Image3MouseMove(Sender: TObject; Shift: TShiftState; X, Y: integer);
 begin
   if (x >= 8) and (y >= 29) and (x <= 508) and (y <= 379) then
@@ -645,7 +638,7 @@ begin
     Image3.Cursor := crDefault;
 end;
 
-// output diagram marker position
+// Output diagram marker position
 procedure TForm1.Image3MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: integer);
 begin
@@ -660,7 +653,8 @@ begin
       if header = True then
       begin
         Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g1xpix) + ' mV');
-        Canvas.TextOut(200, 14, MESSAGE39 + floattostr((y - 379) * (-1) * g1ypix) + ' uA');
+        Canvas.TextOut(200, 14, MESSAGE39 + floattostr(
+          (y - 379) * (-1) * g1ypix) + ' uA');
       end;
     end
     else
@@ -674,7 +668,7 @@ begin
   end;
 end;
 
-// clear display
+// Clear display
 procedure TForm1.BitBtn7Click(Sender: TObject);
 begin
   cleardisplay(7);
@@ -682,29 +676,29 @@ begin
 end;
 
 // -- M8 --
-// start sorting
+// Start sorting
 procedure TForm1.Button7Click(Sender: TObject);
 var
   box: array[1..20] of byte;
   boxindex: byte;
-  Count: integer;
-  inputdata: byte;
-  MinValue, MaxValue: single;
   br: boolean;
+  i: integer;
+  inputdata: byte;
+  minvalue, maxvalue: single;
   put: boolean;
 begin
   StringGrid1.RowCount := 1;
-  for Count := 1 to 20 do
-    box[Count] := 0;
+  for i := 1 to 20 do
+    box[i] := 0;
   boxindex := 0;
   SpinEdit1.Enabled := False;
   Button7.Enabled := False;
   Button11.Enabled := False;
   br := False;
-  Count := 1;
+  i := 1;
   repeat
     if (MessageDlg(MESSAGE33, mtConfirmation, [mbOK, mbCancel], 0) = mrOk) or
-      (Count = 65534) then
+      (i = 65534) then
     begin
       if measure(8) = False then
       begin
@@ -714,17 +708,17 @@ begin
       else
       begin
         StringGrid1.RowCount := StringGrid1.RowCount + 1;
-        StringGrid1.Cells[0, Count] := IntToStr(Count);
-        StringGrid1.Cells[1, Count] := commonproc.mdata[1];
-        inputdata := StrToInt(mdata[1]);
-        MinValue := inputdata - inputdata * Spinedit1.Value / 100;
-        MaxValue := inputdata + inputdata * Spinedit1.Value / 100;
+        StringGrid1.Cells[0, i] := IntToStr(i);
+        StringGrid1.Cells[1, i] := commonproc.mdata[6];
+        inputdata := StrToInt(commonproc.mdata[6]);
+        minvalue := inputdata - inputdata * Spinedit1.Value / 100;
+        maxvalue := inputdata + inputdata * Spinedit1.Value / 100;
         put := False;
         for b := 1 to 20 do
-          if (box[b] <= MaxValue) and (box[b] >= MinValue) then
+          if (box[b] <= maxvalue) and (box[b] >= minvalue) then
           begin
             put := True;
-            StringGrid1.Cells[2, Count] := MESSAGE34 + IntToStr(b);
+            StringGrid1.Cells[2, i] := MESSAGE34 + IntToStr(b);
             break;
           end;
         if put = False then
@@ -733,31 +727,31 @@ begin
           begin
             boxindex := boxindex + 1;
             box[boxindex] := inputdata;
-            StringGrid1.Cells[2, Count] := MESSAGE34 + IntToStr(boxindex);
+            StringGrid1.Cells[2, i] := MESSAGE34 + IntToStr(boxindex);
           end
           else
-            StringGrid1.Cells[2, Count] := MESSAGE35;
+            StringGrid1.Cells[2, i] := MESSAGE35;
         end;
         StringGrid1.Row := StringGrid1.RowCount - 1;
       end;
     end
     else
       br := True;
-    Count := Count + 1;
+    i := i + 1;
   until br = True;
   Button11.Enabled := True;
   Button7.Enabled := True;
   SpinEdit1.Enabled := True;
 end;
 
-// clear button
+// Clear button
 procedure TForm1.Button11Click(Sender: TObject);
 begin
   StringGrid1.RowCount := 1;
 end;
 
 // -- File menu ----------------------------------------------------------------
-// new profile
+// New profile
 procedure TForm1.MenuItem18Click(Sender: TObject);
 var
   mr: longint;
@@ -780,8 +774,8 @@ begin
           exit;
         profilefilename := SaveDialog1.FileName;
         i := length(profilefilename);
-        if profilefilename[i - 3] + profilefilename[i - 2] + profilefilename[i - 1] +
-        profilefilename[i] <> '.pro' then
+        if profilefilename[i - 3] + profilefilename[i - 2] +
+        profilefilename[i - 1] + profilefilename[i] <> '.pro' then
           profilefilename := profilefilename + '.pro';
         fsplit(profilefilename, tdir, tname, textn);
         if FSearch(tname + textn, tdir) <> '' then
@@ -820,7 +814,7 @@ begin
   profilefilename := '';
 end;
 
-// open profile
+// Open profile
 procedure SelectFile;
 var
   mr: longint;
@@ -843,8 +837,8 @@ begin
           exit;
         profilefilename := Form1.SaveDialog1.FileName;
         i := length(profilefilename);
-        if profilefilename[i - 3] + profilefilename[i - 2] + profilefilename[i - 1] +
-        profilefilename[i] <> '.pro' then
+        if profilefilename[i - 3] + profilefilename[i - 2] +
+        profilefilename[i - 1] + profilefilename[i] <> '.pro' then
           profilefilename := profilefilename + '.pro';
         fsplit(profilefilename, tdir, tname, textn);
         if FSearch(tname + textn, tdir) <> '' then
@@ -879,7 +873,7 @@ begin
   Form1.Caption := 'CTT - ' + profilename;
 end;
 
-// open original profile
+// Open original profile
 procedure TForm1.MenuItem21Click(Sender: TObject);
 begin
   OpenDialog1.InitialDir := exepath + 'profiles';
@@ -889,7 +883,7 @@ begin
   changedprofile := False;
 end;
 
-// open my profile
+// Open my profile
 procedure TForm1.MenuItem27Click(Sender: TObject);
 begin
   OpenDialog1.InitialDir := userdir;
@@ -899,7 +893,7 @@ begin
   changedprofile := False;
 end;
 
-// save profile
+// Save profile
 procedure TForm1.MenuItem16Click(Sender: TObject);
 begin
   if profilename = '' then
@@ -926,11 +920,11 @@ begin
   if saveprofile(profilefilename) = True then
   begin
     changedprofile := False;
-    Form1.Caption := commonproc.APPNAME+' - ' + profilename;
+    Form1.Caption := commonproc.APPNAME + ' - ' + profilename;
   end;
 end;
 
-// save profile as
+// Save profile as
 procedure TForm1.MenuItem28Click(Sender: TObject);
 begin
   SaveDialog1.InitialDir := userdir;
@@ -954,18 +948,16 @@ begin
   if saveprofile(profilefilename) = True then
   begin
     changedprofile := False;
-    Form1.Caption := commonproc.APPNAME+' - ' + profilename;
+    Form1.Caption := commonproc.APPNAME + ' - ' + profilename;
   end;
 end;
 
-// save result as BMP
+// Save result as BMP
 procedure TForm1.MenuItem30Click(Sender: TObject);
 var
   filename: string;
 begin
-  {$IFDEF LINUX}
   SaveDialog1.InitialDir := userdir + '..';
-  {$ENDIF}
   SaveDialog1.Title := MESSAGE28;
   SaveDialog1.Filename := Edit2.Text + '.bmp';
   SaveDialog1.Filter := MESSAGE30;
@@ -992,14 +984,12 @@ begin
   end;
 end;
 
-// save result as text
+// Save result as text
 procedure TForm1.MenuItem31Click(Sender: TObject);
 var
   filename: string;
 begin
-  {$IFDEF LINUX}
   SaveDialog1.InitialDir := userdir + '..';
-  {$ENDIF}
   SaveDialog1.Title := MESSAGE29;
   SaveDialog1.Filename := Edit2.Text + '.txt';
   SaveDialog1.Filter := MESSAGE31;
@@ -1026,7 +1016,7 @@ begin
   end;
 end;
 
-// search update
+// Search update
 procedure TForm1.MenuItem20Click(Sender: TObject);
 begin
   if searchupdate = True then
@@ -1038,7 +1028,7 @@ begin
     ShowMessage(MESSAGE22);
 end;
 
-// quit
+// Quit
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
   Close;
@@ -1069,32 +1059,32 @@ begin
   writetodisplay;
 end;
 
-// clear all display
+// Clear all display
 procedure TForm1.MenuItem44Click(Sender: TObject);
 begin
   cleardisplay(99);
 end;
 
 // -- Operation menu -----------------------------------------------------------
-// view 1st page
+// View 1st page
 procedure TForm1.MenuItem22Click(Sender: TObject);
 begin
   PageControl1.ActivePageIndex := 0;
 end;
 
-// view 2nd page
+// View 2nd page
 procedure TForm1.MenuItem23Click(Sender: TObject);
 begin
   PageControl1.ActivePageIndex := 1;
 end;
 
-// view 3rd page
+// View 3rd page
 procedure TForm1.MenuItem40Click(Sender: TObject);
 begin
   PageControl1.ActivePageIndex := 2;
 end;
 
-// view 4th page
+// View 4th page
 procedure TForm1.MenuItem24Click(Sender: TObject);
 begin
   PageControl1.ActivePageIndex := 3;
@@ -1121,9 +1111,7 @@ end;
 // Help
 procedure TForm1.MenuItem10Click(Sender: TObject);
 begin
-{$IFDEF LINUX}
   runbrowser(exepath + 'help/' + lang + '/index.html');
-{$ENDIF}
 end;
 
 // See homepage
