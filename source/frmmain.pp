@@ -395,7 +395,7 @@ begin
   ShowMessage(MESSAGE42 + ' ' + MESSAGE43);
 end;
 
-// OnClose query event
+// OnCloseQuery event
 procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: boolean);
 begin
   if changedprofile = True then
@@ -587,7 +587,11 @@ begin
     begin
       if header = True then
       begin
-        Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g1xpix) + ' mV');
+        if ((x - 8) * g1xpix) >= 1000 then
+          Canvas.TextOut(200, 2, MESSAGE39 + floattostrf(
+            (x - 8) * g1xpix / 1000, ffFixed, 2, 3) + ' V')
+        else
+          Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g1xpix) + ' mV');
         Canvas.TextOut(200, 14, MESSAGE39 + floattostr(
           (y - 379) * (-1) * g1ypix) + ' uA');
       end;
@@ -611,6 +615,7 @@ begin
 end;
 
 // -- M7 --
+// Start measure
 procedure TForm1.Button10Click(Sender: TObject);
 begin
   if measure(7) = False then
@@ -652,9 +657,17 @@ begin
     begin
       if header = True then
       begin
-        Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g1xpix) + ' mV');
-        Canvas.TextOut(200, 14, MESSAGE39 + floattostr(
-          (y - 379) * (-1) * g1ypix) + ' uA');
+        if ((x - 8) * g2xpix) >= 1000 then
+          Canvas.TextOut(200, 2, MESSAGE39 + floattostrf(
+            (x - 8) * g2xpix / 1000, ffFixed, 2, 3) + ' V')
+        else
+          Canvas.TextOut(200, 2, MESSAGE39 + floattostr((x - 8) * g2xpix) + ' mV');
+        if ((y - 379) * (-1) * g2ypix) >= 1000 then
+          Canvas.TextOut(200, 14, MESSAGE39 + floattostrf(
+            (y - 379) * (-1) * g2ypix / 1000, ffFixed, 2, 3) + ' mA')
+        else
+          Canvas.TextOut(200, 14, MESSAGE39 + floattostr(
+            (y - 379) * (-1) * g2ypix) + ' mA');
       end;
     end
     else
@@ -682,23 +695,23 @@ var
   box: array[1..20] of byte;
   boxindex: byte;
   br: boolean;
-  i: integer;
+  Count: integer;
   inputdata: byte;
   minvalue, maxvalue: single;
   put: boolean;
 begin
   StringGrid1.RowCount := 1;
-  for i := 1 to 20 do
-    box[i] := 0;
+  for Count := 1 to 20 do
+    box[Count] := 0;
   boxindex := 0;
   SpinEdit1.Enabled := False;
   Button7.Enabled := False;
   Button11.Enabled := False;
   br := False;
-  i := 1;
+  Count := 1;
   repeat
     if (MessageDlg(MESSAGE33, mtConfirmation, [mbOK, mbCancel], 0) = mrOk) or
-      (i = 65534) then
+      (Count = 65534) then
     begin
       if measure(8) = False then
       begin
@@ -708,8 +721,8 @@ begin
       else
       begin
         StringGrid1.RowCount := StringGrid1.RowCount + 1;
-        StringGrid1.Cells[0, i] := IntToStr(i);
-        StringGrid1.Cells[1, i] := commonproc.mdata[6];
+        StringGrid1.Cells[0, Count] := IntToStr(Count);
+        StringGrid1.Cells[1, Count] := commonproc.mdata[6];
         inputdata := StrToInt(commonproc.mdata[6]);
         minvalue := inputdata - inputdata * Spinedit1.Value / 100;
         maxvalue := inputdata + inputdata * Spinedit1.Value / 100;
@@ -718,7 +731,7 @@ begin
           if (box[b] <= maxvalue) and (box[b] >= minvalue) then
           begin
             put := True;
-            StringGrid1.Cells[2, i] := MESSAGE34 + IntToStr(b);
+            StringGrid1.Cells[2, Count] := MESSAGE34 + IntToStr(b);
             break;
           end;
         if put = False then
@@ -727,17 +740,17 @@ begin
           begin
             boxindex := boxindex + 1;
             box[boxindex] := inputdata;
-            StringGrid1.Cells[2, i] := MESSAGE34 + IntToStr(boxindex);
+            StringGrid1.Cells[2, Count] := MESSAGE34 + IntToStr(boxindex);
           end
           else
-            StringGrid1.Cells[2, i] := MESSAGE35;
+            StringGrid1.Cells[2, Count] := MESSAGE35;
         end;
         StringGrid1.Row := StringGrid1.RowCount - 1;
       end;
     end
     else
       br := True;
-    i := i + 1;
+    Count := Count + 1;
   until br = True;
   Button11.Enabled := True;
   Button7.Enabled := True;

@@ -72,7 +72,7 @@ implementation
 
 { TForm4 }
 
-//  Onshow event
+//  OnShow event
 procedure TForm4.FormShow(Sender: TObject);
 var
   b: byte;

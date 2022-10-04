@@ -16,7 +16,7 @@
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="1"/>
       <BuildNr Value="613"/>
-      <StringTable FileDescription="Computer controlled Transistor Tester" LegalCopyright="(C)2010 Pozsár Zsolt" OriginalFilename="ctt.exe" ProductVersion="0.1.0.0"/>
+      <StringTable FileDescription="Transistor tester and characteristic curve plotte" LegalCopyright="(C)2010-2022 Pozsár Zsolt" OriginalFilename="ctt" ProductVersion="0.1.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>
@@ -259,7 +259,7 @@
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <OtherUnitFiles Value="synapse;convert"/>
-      <UnitOutputDirectory Value="/home/pozsarzs/Git/PROG_ctt-demo-sw/source/lib/i386-linux"/>
+      <UnitOutputDirectory Value="lib/i386-linux"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
